@@ -4221,6 +4221,11 @@ ul {
     fill: var(--light-blue);
   }
 }
+.menu-sidebar__title {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
 .menu-sidebar__btn {
   text-align: left;
   display: -webkit-box;
@@ -5334,8 +5339,6 @@ ul {
   transition: 0.3s;
   cursor: pointer;
   border-radius: 10px;
-}
-.important__header:not(:last-child) {
   margin-bottom: 20px;
 }
 .important__header p {

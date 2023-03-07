@@ -131,6 +131,10 @@
     }
   }
 
+  &__title{
+    transition: 0.3s;
+  }
+
   &__btn {
     text-align: left;
     display: flex;
