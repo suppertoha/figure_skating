@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="main.html" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="navigation__list">
+                    <span>Результаты поиска</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">Результаты поиска</h1>
+            <div class="main-layout__row">
+              <section class="main-layout__searching searching-results">
+                <div class="searching-results__inner">
+
+                  <div class="searching-results__search search-judges">
+
+                    <div class="search-judges__wrapper">
+                      <input type="text" class="search-judges__input search-judges__input_white" placeholder="Соревнования">
+                      <div class="search-judges__box">
+                        <button class="search-judges__btn">
+                          <svg class="search-judges__close">
+                            <use xlink:href="img/sprite.svg#close-search"></use>
+                          </svg>
+                        </button>
+
+                        <button class="search-judges__button " data-text="Найти">
+                          <svg class="search-judges__search">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="searching-results__block">
+                    <div class="searching-results__result"><span>По вашему запросу ничего не найдено!</span></div>
+                    <ul class="searching-results__images">
+                      <li class="searching-results__item">
+                        <svg class="first">
+                          <use xlink:href="img/sprite.svg#search-icon"></use>
+                        </svg>
+                      </li>
+
+                      <li class="searching-results__item">
+                        <svg class="second">
+                          <use xlink:href="img/sprite.svg#search-icon"></use>
+                        </svg>
+                      </li>
+
+                      <li class="searching-results__item">
+                        <svg class="third">
+                          <use xlink:href="img/sprite.svg#search-icon"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

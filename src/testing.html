@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="main.html" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="navigation__list">
+                    <a href="season.html" class="navigation__link">Сезон 2022/23</a>
+                  </li>
+                  <li class="navigation__list">
+                    <span>Тестирование</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">
+              Тестирование
+            </h1>
+            <div class="main-layout__row">
+              <section class="main-layout__inner">
+                <section class="main-layout__testing testing" data-sticke-element>
+                  <div class="testing__inner">
+                    <h2>Тестирование по скольжению</h2>
+
+                    <a
+                      href="images/kitten.jpg"
+                      class="download-text"
+                      download=""
+                    >
+                      <img src="img/download-pdf.svg" alt="pdf" />
+                      Календарь тестирования на сезон 2022-2023.pdf
+                    </a>
+
+                    <h3>Основы организации:</h3>
+
+                    <ol>
+                      <li>
+                        По общему правилу тестирование сдаётся у себя в школе.
+                        График тестирования по месяцам составляется в начале
+                        сезона, точные даты согласуются не менее, чем за 10 дней
+                        до начала тестирования. Сроки сдачи тестирования у себя
+                        в школе можно узнать у методиста, завуча или тренера.
+                        Время проведения тестирования назначает проводящая
+                        организация.
+                      </li>
+                      <li>
+                        Расписание тестирования по разрядам не делается,
+                        т.к.невозможно просчитать заранее уровень подготовки
+                        спортсменов.
+                      </li>
+                      <li>
+                        Зачётные книжки необходимо сдавать до начала всего
+                        тестирования, а не своего разряда. Зачётные книжки
+                        отдаются по окончании тестирования методисту или тренеру
+                        школы!
+                      </li>
+                      <li>
+                        Если спортсмен не может принять участия в тестировании в
+                        своей школе по уважительной причине (болезнь, экзамены в
+                        школе и т.п.), то необходимо подготовить документ,
+                        подтверждающий причину отсутствия. Методист отправляет в
+                        Федерацию копию документа с просьбой назначить дату
+                        тестирования, в этом случае спортсмен по решению
+                        судейской коллегии может быть допущен до сдачи тестов на
+                        чужой площадке.
+                      </li>
+                      <li>
+                        Тестирование проводится ТОЛЬКО для московских
+                        организаций. Все спортивные клубы должны быть включены в
+                        Реестр ФФКМ.
+                      </li>
+
+                      <li>
+                        Спортсмены должны представить НАДЛЕЖАЩИМ ОБРАЗОМ
+                        ЗАПОЛНЕННУЮ зачётную книжку. Пересдача тестирования в
+                        тот же день не допускается. Личный тренер спортсмена во
+                        время приёма тестов должен находиться рядом со сдающим
+                        фигуристом, а не в зоне разминки! Тренер должен слушать
+                        замечания бригады, помогать спортсмену исправить ошибку,
+                        если об этом просит судья. Тренер имеет право задавать
+                        вопросы.
+                      </li>
+                    </ol>
+
+                    <h3>С какими документами необходимо ознакомиться каждому участнику:</h3>
+
+                    <ul>
+                      <li>
+                        <a href="images/kitten.jpg" class="download-text" download="">
+                          <img src="img/download-pdf.svg" alt="pdf">
+                          <span>Положение о тестировании.pdf</span>
+
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="images/kitten.jpg" class="download-text" download="">
+                          <img src="img/download-pdf.svg" alt="pdf">
+                          <span>Программа тестирования.pdf</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="images/kitten.jpg" class="download-text" download="">
+                          <img src="img/download-pdf.svg" alt="pdf">
+                          <span>Размер оплаты за участие в спортивных мероприятиях, проводимых ФФКМ.pdf</span>
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div class="content-buttons">
+
+
+                    <button class="btn btn-border_white">
+                      Календарь скольжения
+                    </button>
+
+                    <button class="btn btn-white">
+                      Подать заявку
+                    </button>
+                  </div>
+                </section>
+              </section>
+
+              <!-- sidebar-cart -->
+
+              <sidebar class="main-layout__sidebar sidebar-cart">
+                <section class="sidebar-cart__inner">
+                  <ul class="sidebar-cart__items">
+                    <li class="sidebar-cart__menu menu-sidebar">
+                      <ul class="menu-sidebar_body">
+                        <li class="menu-sidebar__item">
+                          <a href="season.html">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Сезон 2022/23</a
+                          >
+                        </li>
+
+                        <li>
+                          <ul class="menu-sidebar__next">
+                            <li class="menu-sidebar__wrap">
+                              <button
+                                class="menu-sidebar__btn accordion-start-js"
+                              >
+                                <svg class="menu-sidebar__skate">
+                                  <use xlink:href="img/sprite.svg#skate"></use>
+                                </svg>
+                                <span class="menu-sidebar__title"
+                                  >Соревнования</span
+                                >
+                                <span class="menu-sidebar__icon">
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul
+                                class="menu-sidebar__inside accordion-content-js"
+                              >
+                                <li>
+                                  <a href="current-competitions.html">Текущие соревнования</a>
+                                </li>
+
+                                <li>
+                                  <a href="calendar-general.html"
+                                    >Календарь спортивных соревнований</a
+                                  >
+                                </li>
+
+                                <li>
+                                  <a href="calendar-of-synchronized.html"
+                                    >Календарь соревнований по синхронному
+                                    катанию</a
+                                  >
+                                </li>
+
+                                <li>
+                                  <a href="#"
+                                    >Календарь соревнований для любителей</a
+                                  >
+                                </li>
+
+                                <li>
+                                  <a href="#"
+                                    >Календарь всероссийских соревнований</a
+                                  >
+                                </li>
+
+                                <li>
+                                  <a href="#">Подать заявку</a>
+                                </li>
+
+                                <li>
+                                  <a href="skater-insurance.html">Страхование фигуристов</a>
+                                </li>
+
+                                <li>
+                                  <a href="figure-skaters-of-Moscow.html">Фигуристы Москвы</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          <ul class="menu-sidebar__next">
+                            <li class="menu-sidebar__wrap">
+                              <button
+                                class="menu-sidebar__btn accordion-start-js open"
+                              >
+                                <svg class="menu-sidebar__skate">
+                                  <use xlink:href="img/sprite.svg#skate"></use>
+                                </svg>
+                                <span class="menu-sidebar__title"
+                                  >Тестирование</span
+                                >
+                                <span class="menu-sidebar__icon">
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul
+                                class="menu-sidebar__inside accordion-content-js open"
+                              >
+                                <li>
+                                  <a href="testing.html"
+                                    >Календарь тестирования скольжения</a
+                                  >
+                                </li>
+
+                                <li>
+                                  <a href="apply-for-testing.html">Подать заявку</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="menu-sidebar__item">
+                          <a href="seminars.html">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Семинары и мастер-классы</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="sidebar-cart__item sidebar-cart__item_big">
+                      <div class="sidebar-cart__body">
+                        <div class="sidebar-cart__img">
+                          <picture>
+                            <source
+                              srcset="img/image-sidebar-1.webp"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/image-sidebar-1.jpg"
+                              class="image"
+                              alt=""
+                            />
+                          </picture>
+                        </div>
+
+                        <div class="sidebar-cart__content">
+                          <button class="sidebar-cart__button btn btn-icon">
+                            <span class="btn-icon__date">
+                              <svg class="btn-icon__icon">
+                                <use xlink:href="img/sprite.svg#calendon"></use>
+                              </svg>
+
+                              <span>26.04.2022</span>
+                            </span>
+                          </button>
+                          <span class="sidebar-cart__name"
+                            >День рождения Камилы Валиевой</span
+                          >
+                          <div class="sidebar-cart__description">
+                            Олимпийская чемпионка в командном соревновании,
+                            чемпионка Европы
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="sidebar-cart__item sidebar-cart__item_big">
+                      <div class="sidebar-cart__images">
+                        <picture>
+                          <source
+                            srcset="img/image-sidebar-2.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/image-sidebar-2.jpg"
+                            class="image"
+                            alt="gallery"
+                          />
+                        </picture>
+                      </div>
+                    </li>
+
+                    <li class="sidebar-cart__item cart-btn">
+                      <div class="cart-btn__contain">
+                        <div class="cart-btn__image">
+                          <picture>
+                            <source
+                              srcset="img/image-sidebar-3.jpg"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/image-sidebar-3.jpg."
+                              class="image"
+                              alt="gallery"
+                            />
+                          </picture>
+                        </div>
+
+                        <span class="cart-btn__description"
+                          >Музей фигурного катания</span
+                        >
+                        <a href="#" class="cart-btn__link btn-link">Перейти</a>
+                      </div>
+                    </li>
+
+                    <li class="sidebar-cart__item cart-btn">
+                      <div class="cart-btn__contain">
+                        <div class="cart-btn__image">
+                          <picture>
+                            <source
+                              srcset="img/image-sidebar-4.jpg"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/image-sidebar-4.jpg."
+                              class="image"
+                              alt="gallery"
+                            />
+                          </picture>
+                        </div>
+
+                        <span class="cart-btn__description">Фотогалерея</span>
+                        <a href="#" class="cart-btn__link btn-link">Перейти</a>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+              </sidebar>
+              <!--end sidebar-cart -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

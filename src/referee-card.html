@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="main.html" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="navigation__list">
+                    <a href="#" class="navigation__link"> Федерация</a>
+                  </li>
+                  <li class="navigation__list">
+                    <a href="#" class="navigation__link">Коллегия судей</a>
+                  </li>
+                  <li class="navigation__list">
+                    <a href="#" class="navigation__link">Картотека судей</a>
+                  </li>
+                  <li class="navigation__list">
+                    <span>Маркова Ольга Дмитриевна</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">
+              Маркова Ольга Дмитриевна
+            </h1>
+
+            <div class="main-layout__row main-layout__row_reverse">
+              <!-- sidebar-cart -->
+
+              <sidebar class="main-layout__sidebar sidebar-cart">
+                <section class="sidebar-cart__inner">
+                  <div class="sidebar-cart__images sidebar-cart__images-foto">
+                    <picture>
+                      <source
+                        srcset="img/cart-about-11.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        loading="lazy"
+                        src="img/cart-about-11.jpg"
+                        class="image"
+                        width=""
+                        height=""
+                        alt=""
+                      />
+                    </picture>
+                    <span class="sidebar-cart__info">
+                      Маркова Ольга Дмитриевна
+                    </span>
+                  </div>
+                </section>
+              </sidebar>
+
+              <!--end sidebar-cart -->
+              <section class="main-layout__inner main-layout__inner_filter">
+                <div class="main-layout__referee referee-cart">
+                  <ul class="referee-cart__items">
+                    <li class="referee-cart__item">
+                      <div class="referee-cart__body">
+                        <ul class="referee-cart__parent">
+                          <li>
+                            <div class="referee-cart__name">Регион</div>
+                            <div class="referee-cart__description">Москва</div>
+                          </li>
+
+                          <li>
+                            <div class="referee-cart__name">Образование</div>
+                            <div class="referee-cart__description">
+                              Высшее / ГЦОЛИФК
+                            </div>
+                          </li>
+                        </ul>
+
+                        <ul class="referee-cart__parent">
+                          <li>
+                            <div class="referee-cart__name">Место работы</div>
+                            <div class="referee-cart__description">ФФКМ</div>
+                          </li>
+
+                          <li>
+                            <div class="referee-cart__name">
+                              Судейская категория
+                            </div>
+                            <div class="referee-cart__description">ВК</div>
+                          </li>
+                        </ul>
+
+                        <ul class="referee-cart__parent">
+                          <li>
+                            <div class="referee-cart__name">
+                              Приказ о категории
+                            </div>
+                            <div class="referee-cart__description">
+                              № 012/08-20 от 31.08.20 г
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="referee-cart__name">
+                              Дата прохождения семинара
+                            </div>
+                            <div class="referee-cart__description">
+                              29.08.2018
+                            </div>
+                          </li>
+                        </ul>
+
+                        <ul class="referee-cart__parent">
+                          <li>
+                            <div class="referee-cart__name">
+                              Статус судейской категории
+                            </div>
+                            <div class="referee-cart__description">
+                              <strong>действующая</strong>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="referee-cart__name">
+                              Судейские документы
+                            </div>
+                            <div class="referee-cart__description">
+                              <a href="#" download="" class="download">
+                                <svg class="download__icon">
+                                  <use
+                                    xlink:href="img/sprite.svg#arrow-download"
+                                  ></use>
+                                </svg>
+                                Скачать</a
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="referee-cart__name">Дисциплина</div>
+                        <div class="referee-cart__description">
+                          <p>Одиночное катание</p>
+                          <p>Парное катание</p>
+                          <p>Танцы на льду</p>
+                        </div>
+
+                        <div class="referee-cart__name">
+                          Функциональные обязанности
+                        </div>
+                        <div class="referee-cart__description">
+                          <p>Судья одиночного/парного катания [ОС]</p>
+                          <p>Судья по танцам на льду [ОС]</p>
+                          <p>Рефери одиночного/парного катания [ОС]</p>
+                          <p>Рефери по танцам на льду [ОС]</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="referee-cart__item">
+                      <div class="referee-cart__body">
+                        <h2 class="referee-cart__title">
+                          Судейская активность
+                        </h2>
+                        <ul class="referee-cart__active">
+                          <li class="referee-cart__dropdown dropdown">
+                            <button
+                              class="dropdown__button dropdown__button_black"
+                            >
+                              <span>2020-2021</span>
+
+                              <svg class="arrow-triangle arrow-triangle_black">
+                                <use
+                                  xlink:href="img/sprite.svg#arrow-triangle"
+                                ></use>
+                              </svg>
+                            </button>
+
+                            <ul class="dropdown__list dropdown__list_black">
+                              <li
+                                class="dropdown__list-item"
+                                data-value="2019-2020"
+                              >
+                                2019-2020
+                              </li>
+                              <li
+                                class="dropdown__list-item"
+                                data-value="2018-2019"
+                              >
+                                2018-2019
+                              </li>
+                              <li
+                                class="dropdown__list-item"
+                                data-value="2017-2018"
+                              >
+                                2017-2018
+                              </li>
+
+                              <li
+                                class="dropdown__list-item"
+                                data-value="2016-2017"
+                              >
+                                2016-2017
+                              </li>
+
+                              <li
+                                class="dropdown__list-item"
+                                data-value="2015-2016"
+                              >
+                                2015-2016
+                              </li>
+                            </ul>
+                            <input
+                              type="text"
+                              name="Day"
+                              class="dropdown__input-hidden"
+                            />
+                          </li>
+
+                          <li class="referee-cart__dropdown dropdown">
+                            <button
+                              class="dropdown__button dropdown__button_black"
+                            >
+                              <span>Показывать по&nbsp;20</span>
+
+                              <svg class="arrow-triangle arrow-triangle_black">
+                                <use
+                                  xlink:href="img/sprite.svg#arrow-triangle"
+                                ></use>
+                              </svg>
+                            </button>
+
+                            <ul class="dropdown__list dropdown__list_black">
+                              <li class="dropdown__list-item" data-value="5">
+                                5
+                              </li>
+                              <li class="dropdown__list-item" data-value="10">
+                                10
+                              </li>
+                              <li class="dropdown__list-item" data-value="20">
+                                20
+                              </li>
+
+                              <li class="dropdown__list-item" data-value="40">
+                                40
+                              </li>
+
+                              <li class="dropdown__list-item" data-value="80">
+                                80
+                              </li>
+                            </ul>
+                            <input
+                              type="text"
+                              name="Day"
+                              class="dropdown__input-hidden"
+                            />
+                          </li>
+                        </ul>
+
+                        <button
+                          class="referee-cart__loads button-loads button-loads_blue-dark"
+                        >
+                          <svg class="button-loads__icon">
+                            <use xlink:href="img/sprite.svg#arrows"></use>
+                          </svg>
+                          Сбросить фильтры
+                        </button>
+
+                        <table class="referee-cart__table table table-referee">
+                          <thead>
+                            <tr>
+                              <th>Сезон</th>
+                              <th>Турнир</th>
+                              <th>Судейская практика</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td data-name="Сезон">2020-2021</td>
+                              <td data-category="Турнир">
+                                <a href="#">1 этап ИСУ Гран При Юниоры</a>
+                              </td>
+                              <td data-order="Судейская практика">Судья</td>
+                            </tr>
+
+                            <tr>
+                              <td data-name="Сезон">2020-2021</td>
+                              <td data-category="Турнир">
+                                <a href="#">1 этап ИСУ Гран При Юниоры</a>
+                              </td>
+                              <td data-order="Судейская практика">Судья</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </li>
+
+                    <li class="referee-cart__item">
+                      <button class="btn btn-white">Вернуться назад</button>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

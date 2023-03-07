@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="main.html" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="navigation__list">
+                    <a href="season.html" class="navigation__link">Сезон 2022/23</a>
+                  </li>
+                  <li class="navigation__list">
+                    <span>Текущие соревнования</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">
+              Текущие соревнования
+            </h1>
+            <div class="main-layout__row">
+              <section class="main-layout__inner">
+                <section class="main-layout__cards cards-content" >
+                  <ul class="cards-content__items">
+
+                    <li class="cards-content__item">
+                      <div class="cards-content__block">
+                        <picture class="cards-content__img">
+                          <source srcset="img/season-1-desktop.webp" type="image/webp" media="(min-width: 1024px)" >
+                          <source srcset="img/season-1-mobile.webp" type="image/webp" media="(min-width: 320px)" >
+                          <img loading="lazy" src="img/season-1-mobile.png" class="image" width="" height="" alt="season">
+                        </picture>
+
+                        <button class="cards-content__button btn btn-icon">
+                          <span class="btn-icon__date">
+                            <svg class="btn-icon__icon">
+                              <use xlink:href="img/sprite.svg#calendon"></use>
+                            </svg>
+
+                            <span>24.10.2022 - 25.10.2022</span>
+                          </span>
+                        </button>
+                      </div>
+
+                      <div class="cards-content__content">
+                        <h2 class="cards-content__title">
+                          Турнир по фигурному катанию на коньках «Академии спорта»
+
+                          <strong>
+                            Осенний
+                          </strong>
+                        </h2>
+
+                        <span class="cards-content__place">
+                          Место проведения
+                        </span>
+
+                        <span class="cards-content__name">
+                          ЛК «Южный Лед»
+                        </span>
+
+                        <ul class="cards-content__download">
+                          <li class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-pdf.svg" alt="pdf">
+                              <span>Фотоотчет о мероприятии.pdf</span>
+
+                            </a>
+                          </li>
+
+                          <li class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-doc.svg" alt="doc">
+                              <span>Информация о заявлении.doc</span>
+                            </a>
+                          </li>
+
+                          <li class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-xls.svg" alt="xls">
+                              <span>Таблица итогов.xls</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="cards-content__item">
+                      <div class="cards-content__block">
+                        <picture class="cards-content__img">
+                          <source srcset="img/season-2-desktop.webp" type="image/webp" media="(min-width: 1024px)" >
+                          <source srcset="img/season-2-mobile.webp" type="image/webp" media="(min-width: 320px)" >
+                          <img loading="lazy" src="img/season-2-mobile.png" class="image" width="" height="" alt="season">
+                        </picture>
+
+                        <button class="cards-content__button btn btn-icon">
+                          <span class="btn-icon__date">
+                            <svg class="btn-icon__icon">
+                              <use xlink:href="img/sprite.svg#calendon"></use>
+                            </svg>
+
+                            <span>24.10.2022 - 25.10.2022</span>
+                          </span>
+                        </button>
+                      </div>
+
+                      <div class="cards-content__content">
+                        <h2 class="cards-content__title">
+                          Турнир по фигурному катанию на коньках
+
+                          <strong>
+                            На призы ЗМС А.А. Крыловой и О.В. Овсянникова
+                          </strong>
+                        </h2>
+
+                        <span class="cards-content__place">
+                          Место проведения
+                        </span>
+
+                        <span class="cards-content__name">
+                          ДС «Мегаспорт»
+                        </span>
+
+                        <ul class="cards-content__list">
+                          <li class="cards-content__el">
+                            <a href="#" class="cards-content__link link-blue">Прямая трансляция</a>
+                          </li>
+
+                          <li class="cards-content__el">
+                            <a href="#" class="cards-content__link link-blue">Онлайн-табло</a>
+                          </li>
+                        </ul>
+
+                        <ul class="cards-content__download">
+                          <li class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-pdf.svg" alt="pdf">
+                              <span>Фотоотчет о мероприятии.pdf</span>
+
+                            </a>
+                          </li>
+
+                          <li class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-doc.svg" alt="doc">
+                              <span>Информация о заявлении.doc</span>
+                            </a>
+                          </li>
+
+                          <li class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-xls.svg" alt="xls">
+                              <span>Таблица итогов.xls</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+
+                    <li class="cards-content__item">
+                      <div class="cards-content__block">
+                        <picture class="cards-content__img">
+                          <source srcset="img/season-1-desktop.webp" type="image/webp" media="(min-width: 1024px)" >
+                          <source srcset="img/season-1-mobile.webp" type="image/webp" media="(min-width: 320px)" >
+                          <img loading="lazy" src="img/season-1-mobile.png" class="image" width="" height="" alt="season">
+                        </picture>
+
+                        <button class="cards-content__button btn btn-icon">
+                          <span class="btn-icon__date">
+                            <svg class="btn-icon__icon">
+                              <use xlink:href="img/sprite.svg#calendon"></use>
+                            </svg>
+
+                            <span>24.10.2022 - 25.10.2022</span>
+                          </span>
+                        </button>
+                      </div>
+
+                      <div class="cards-content__content">
+                        <h2 class="cards-content__title">
+                          Турнир по фигурному катанию на коньках «Академии спорта»
+
+                          <strong>
+                            Осенний
+                          </strong>
+                        </h2>
+
+                        <span class="cards-content__place">
+                          Место проведения
+                        </span>
+
+                        <span class="cards-content__name">
+                          ЛК «Южный Лед»
+                        </span>
+
+                        <ul class="cards-content__download">
+                          <li class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-pdf.svg" alt="pdf">
+                              <span>Фотоотчет о мероприятии.pdf</span>
+
+                            </a>
+                          </li>
+
+                          <li class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-doc.svg" alt="doc">
+                              <span>Информация о заявлении.doc</span>
+                            </a>
+                          </li>
+
+                          <li class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-xls.svg" alt="xls">
+                              <span>Таблица итогов.xls</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="cards-content__item">
+                      <div class="cards-content__block">
+                        <picture class="cards-content__img">
+                          <source srcset="img/season-3-desktop.webp" type="image/webp" media="(min-width: 1024px)" >
+                          <source srcset="img/season-3-mobile.webp" type="image/webp" media="(min-width: 320px)" >
+                          <img loading="lazy" src="img/season-3-mobile.png" class="image" width="" height="" alt="season">
+                        </picture>
+
+                        <button class="cards-content__button btn btn-icon">
+                          <span class="btn-icon__date">
+                            <svg class="btn-icon__icon">
+                              <use xlink:href="img/sprite.svg#calendon"></use>
+                            </svg>
+
+                            <span>24.10.2022 - 25.10.2022</span>
+                          </span>
+                        </button>
+                      </div>
+
+                      <div class="cards-content__content">
+                        <h2 class="cards-content__title">
+                          Турнир по фигурному катанию на коньках
+
+                          <strong>
+                            На призы ЗМС А.А. Крыловой и О.В. Овсянникова длинное название соревнования
+                          </strong>
+                        </h2>
+
+                        <span class="cards-content__place">
+                          Место проведения
+                        </span>
+
+                        <span class="cards-content__name">
+                          ДС «Мегаспорт»
+                        </span>
+
+                        <ul class="cards-content__list">
+                          <li class="cards-content__el">
+                            <a href="#" class="cards-content__link link-blue">Прямая трансляция</a>
+                          </li>
+
+                          <li class="cards-content__el">
+                            <a href="#" class="cards-content__link link-blue">Онлайн-табло</a>
+                          </li>
+                        </ul>
+
+                        <ul class="cards-content__download">
+                          <li class="cards-content__w50">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-pdf.svg" alt="pdf">
+                              <span>Регламент соревнований.pdf</span>
+
+                            </a>
+                          </li>
+
+                          <li class="cards-content__w50">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-doc.svg" alt="doc">
+                              <span>Информация о заявлении.doc</span>
+                            </a>
+                          </li>
+
+                          <li class="cards-content__w50">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-xls.svg" alt="xls">
+                              <span>Таблица итогов.xls</span>
+                            </a>
+                          </li>
+
+                          <li class="cards-content__w50">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-doc.svg" alt="doc">
+                              <span>Информация о заявлении.doc</span>
+                            </a>
+                          </li>
+
+                          <li class="cards-content__w50">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-xls.svg" alt="xls">
+                              <span>Таблица итогов.xls</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="cards-content__item">
+                      <div class="cards-content__block">
+                        <picture class="cards-content__img">
+                          <source srcset="img/season-1-desktop.webp" type="image/webp" media="(min-width: 1024px)" >
+                          <source srcset="img/season-1-mobile.webp" type="image/webp" media="(min-width: 320px)" >
+                          <img loading="lazy" src="img/season-1-mobile.png" class="image" width="" height="" alt="season">
+                        </picture>
+
+                        <button class="cards-content__button btn btn-icon">
+                          <span class="btn-icon__date">
+                            <svg class="btn-icon__icon">
+                              <use xlink:href="img/sprite.svg#calendon"></use>
+                            </svg>
+
+                            <span>24.10.2022 - 25.10.2022</span>
+                          </span>
+                        </button>
+                      </div>
+
+                      <div class="cards-content__content">
+                        <h2 class="cards-content__title">
+                          Турнир по фигурному катанию на коньках «Академии спорта»
+
+                          <strong>
+                            Осенний
+                          </strong>
+                        </h2>
+
+                        <span class="cards-content__place">
+                          Место проведения
+                        </span>
+
+                        <span class="cards-content__name">
+                          ДС «Мегаспорт»
+                        </span>
+
+                        <ul class="cards-content__download">
+                          <li  class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-pdf.svg" alt="pdf">
+                              <span>Фотоотчет о мероприятии.pdf</span>
+
+                            </a>
+                          </li>
+
+                          <li  class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-doc.svg" alt="doc">
+                              <span>Информация о заявлении.doc</span>
+                            </a>
+                          </li>
+
+                          <li  class="cards-content__w100">
+                            <a href="images/kitten.jpg" class="download-text" download="">
+                              <img src="img/download-xls.svg" alt="xls">
+                              <span>Таблица итогов.xls</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="cards-content__nav nav-block">
+
+                    <button class="nav-block__button button-loads show-more">
+                      <svg class="button-loads__icon">
+                        <use xlink:href="img/sprite.svg#loading"></use>
+                      </svg>
+                      Показать еще
+                    </button>
+                      <!-- Pagination -->
+
+                    <div class="shift-employer__pagination pagination">
+                      <div class="pagination__inner">
+
+                        <div class="pagination__prew arrow">
+                          <svg class="">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                          </svg>
+                        </div>
+                          <ul class="pagination__list">
+                            <li class="pagination__item active">
+                              <a href="#" class="pagination__link">1</a>
+                            </li>
+                            <li class="pagination__item">
+                              <a href="#" class="pagination__link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                              <a href="#" class="pagination__link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                              <a href="#" class="pagination__link">4</a>
+                            </li>
+                            <li class="pagination__item">
+                              <a href="#" class="pagination__link">5</a>
+                            </li>
+                            <li class="pagination__item">
+                              <a href="#" class="pagination__link">6</a>
+                            </li>
+
+                            <li class="pagination__item pagination__item_points">
+                              <span>
+                               …
+                              </span>
+                            </li>
+
+                            <li class="pagination__item">
+                              <a href="#" class="pagination__link">38</a>
+                            </li>
+
+                          </ul>
+
+                          <div class="pagination__next arrow">
+                            <svg class="">
+                              <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                      </div>
+                    </div>
+
+                      <!--End Pagination -->
+
+                  </div>
+                </section>
+              </section>
+
+              <!-- sidebar-cart -->
+
+              <sidebar class="main-layout__sidebar sidebar-cart">
+                <section class="sidebar-cart__inner">
+                  <ul class="sidebar-cart__items">
+                    <li class="sidebar-cart__menu menu-sidebar">
+                      <ul class="menu-sidebar_body">
+                        <li class="menu-sidebar__item">
+                          <a href="season.html">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Сезон 2022/23</a
+                          >
+                        </li>
+
+                        <li>
+                          <ul class="menu-sidebar__next">
+                            <li class="menu-sidebar__wrap">
+                              <button
+                                class="menu-sidebar__btn accordion-start-js open"
+                              >
+                                <svg class="menu-sidebar__skate">
+                                  <use xlink:href="img/sprite.svg#skate"></use>
+                                </svg>
+                                <span class="menu-sidebar__title"
+                                  >Соревнования</span
+                                >
+                                <span class="menu-sidebar__icon">
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul
+                                class="menu-sidebar__inside accordion-content-js open"
+                              >
+                                <li>
+                                  <a class="active" href="current-competitions.html">Текущие соревнования</a>
+                                </li>
+
+                                <li>
+                                  <a href="calendar-general.html"
+                                    >Календарь спортивных соревнований</a
+                                  >
+                                </li>
+
+                                <li>
+                                  <a href="calendar-of-synchronized.html"
+                                    >Календарь соревнований по синхронному
+                                    катанию</a
+                                  >
+                                </li>
+
+                                <li>
+                                  <a href="#"
+                                    >Календарь соревнований для любителей</a
+                                  >
+                                </li>
+
+                                <li>
+                                  <a href="#"
+                                    >Календарь всероссийских соревнований</a
+                                  >
+                                </li>
+
+                                <li>
+                                  <a href="#">Подать заявку</a>
+                                </li>
+
+                                <li>
+                                  <a href="skater-insurance.html">Страхование фигуристов</a>
+                                </li>
+
+                                <li>
+                                  <a href="figure-skaters-of-Moscow.html">Фигуристы Москвы</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          <ul class="menu-sidebar__next">
+                            <li class="menu-sidebar__wrap">
+                              <button
+                                class="menu-sidebar__btn accordion-start-js"
+                              >
+                                <svg class="menu-sidebar__skate">
+                                  <use xlink:href="img/sprite.svg#skate"></use>
+                                </svg>
+                                <span class="menu-sidebar__title"
+                                  >Тестирование</span
+                                >
+                                <span class="menu-sidebar__icon">
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul
+                                class="menu-sidebar__inside accordion-content-js"
+                              >
+                                <li>
+                                  <a href="testing.html"
+                                    >Календарь тестирования скольжения</a
+                                  >
+                                </li>
+
+                                <li>
+                                  <a href="apply-for-testing.html">Подать заявку</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="menu-sidebar__item">
+                          <a href="seminars.html">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Семинары и мастер-классы</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="sidebar-cart__item sidebar-cart__item_big">
+                      <div class="sidebar-cart__body">
+                        <div class="sidebar-cart__img">
+                          <picture>
+                            <source
+                              srcset="img/image-sidebar-1.webp"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/image-sidebar-1.jpg"
+                              class="image"
+                              alt=""
+                            />
+                          </picture>
+                        </div>
+
+                        <div class="sidebar-cart__content">
+                          <button class="sidebar-cart__button btn btn-icon">
+                            <span class="btn-icon__date">
+                              <svg class="btn-icon__icon">
+                                <use xlink:href="img/sprite.svg#calendon"></use>
+                              </svg>
+
+                              <span>26.04.2022</span>
+                            </span>
+                          </button>
+                          <span class="sidebar-cart__name"
+                            >День рождения Камилы Валиевой</span
+                          >
+                          <div class="sidebar-cart__description">
+                            Олимпийская чемпионка в командном соревновании,
+                            чемпионка Европы
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="sidebar-cart__item sidebar-cart__item_big">
+                      <div class="sidebar-cart__images">
+                        <picture>
+                          <source
+                            srcset="img/image-sidebar-2.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/image-sidebar-2.jpg"
+                            class="image"
+                            alt="gallery"
+                          />
+                        </picture>
+                      </div>
+                    </li>
+
+                    <li class="sidebar-cart__item cart-btn">
+                      <div class="cart-btn__contain">
+                        <div class="cart-btn__image">
+                          <picture>
+                            <source
+                              srcset="img/image-sidebar-3.jpg"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/image-sidebar-3.jpg."
+                              class="image"
+                              alt="gallery"
+                            />
+                          </picture>
+                        </div>
+
+                        <span class="cart-btn__description"
+                          >Музей фигурного катания</span
+                        >
+                        <a href="#" class="cart-btn__link btn-link">Перейти</a>
+                      </div>
+                    </li>
+
+                    <li class="sidebar-cart__item cart-btn">
+                      <div class="cart-btn__contain">
+                        <div class="cart-btn__image">
+                          <picture>
+                            <source
+                              srcset="img/image-sidebar-4.jpg"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/image-sidebar-4.jpg."
+                              class="image"
+                              alt="gallery"
+                            />
+                          </picture>
+                        </div>
+
+                        <span class="cart-btn__description">Фотогалерея</span>
+                        <a href="#" class="cart-btn__link btn-link">Перейти</a>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+              </sidebar>
+              <!--end sidebar-cart -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+/* Начальные стили для элемента, который будет следовать за курсором, в нашем случае небольшой кружок */
+.follow-cursor {
+  opacity: 1;
+  visibility: visible;
+  border-radius: 0px;
+  //transform: translateY(-50%) translateX(-50%); /* центрируем кружок */
+  position: fixed; /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
+  position: fixed;
+  //position: relative;
+  left: 0;
+  //right: 0;
+  //bottom: 0;
+  top: 0;
+  z-index: 999; /* чтобы элемент был над остальными элементами */
+  pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
+  transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
+  //transition: 0.07s;
+  //background-image: url(../img/cursor.svg);
+
+  //width: 20px;
+  //height: 20px;
+  //background: rgba(63, 168, 227, 0.2);
+  //filter: blur(10px);
+
+  //background: rgba(63, 168, 227, 0.2);
+  //box-shadow: inset rgba(63, 168, 227, 0.2) 0 0 40px 10px,
+  //  rgba(63, 168, 227, 0.1) 0 0 24px 12px, rgba(63, 168, 227, 0.2) 0 0 24px 12px;
+  //margin: 30px;
+  //position: absolute;
+  height: 87px;
+  width: 87px;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+
+    background: rgba(63, 168, 227, 0.2);
+    filter: blur(10px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #3fa8e3;
+    filter: blur(50px);
+    width: 87px;
+    height: 87px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Активный класс для кружка при наведении на ссылку */
+.hidden-mouse {
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Скрываем декоративный элемент при ширине браузера меньше 992px */
+@media (max-width: 991.98px) {
+  .follow-cursor {
+    display: none;
+  }
+}
+
+

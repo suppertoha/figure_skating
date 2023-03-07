@@ -1,0 +1,167 @@
+.judges {
+  &__title {
+    margin-bottom: 30px;
+
+    @include min1366 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__search {
+    margin-bottom: 30px;
+  }
+}
+
+.search-judges {
+  &__description {
+    display: none;
+
+    @include min1024 {
+      display: block;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__wrapper {
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    display: flex;
+    height: 50px;
+    position: relative;
+    transition: 0.3s;
+    &:active {
+      border: 2px solid #3fa8e3;
+    }
+
+    @include min1024 {
+      &:hover {
+        border: 2px solid #3fa8e3;
+      }
+    }
+
+    @include min1366 {
+      height: 60px;
+    }
+  }
+
+  &__input {
+    border: transparent;
+    background: transparent;
+    padding: 15px;
+    width: 100%;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+
+    &::placeholder {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    @include min1366 {
+      padding: 15px 40px;
+    }
+
+    &_white{
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__box {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &__btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    @include min1024 {
+      margin-right: 16px;
+    }
+  }
+
+  &__close {
+    display: flex;
+    align-self: center;
+
+    width: 15px;
+    height: 15px;
+    fill: #8a96a2;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 40px;
+    border: none;
+    transition: 0.3s;
+
+    @include min1024 {
+      font-size: 18px;
+      width: auto;
+      &::before {
+        transition: 0.3s;
+        content: attr(data-text);
+        display: inline-block;
+        padding: 15px 20px;
+        line-height: 1;
+      }
+
+      &:hover {
+        background: #3fa8e3;
+        &::before {
+          color: #ffffff;
+        }
+      }
+    }
+
+    @include min1366 {
+      height: 50px;
+    }
+  }
+
+  &__search {
+    width: 20px;
+    height: 20px;
+    fill: #1f2123;
+
+    @include min1024 {
+      display: none;
+    }
+  }
+}
+
+.description-search {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #3fa8e3;
+
+  @include min1024 {
+    font-size: 18px;
+  }
+}

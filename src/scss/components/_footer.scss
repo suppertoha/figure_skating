@@ -1,0 +1,147 @@
+.footer{
+
+  &__inner{
+    @include min1024 {
+      padding: 40px 30px;
+    }
+
+    @include min1366 {
+      padding: 40px 0;
+    }
+
+  }
+
+  .accordion__content {
+
+    @include min1024 {
+      &.open{
+        padding: 0;
+      }
+    }
+  }
+
+  &__bottom{
+    @include min1024 {
+      @include bb;
+
+      &::before{
+        bottom: auto;
+        top: 0;
+      }
+    }
+  }
+
+  &__nav{
+    position: static;
+    opacity: 1;
+    display: block;
+    visibility: visible;
+    padding: 0;
+    overflow: inherit;
+  }
+
+  &__container{
+    @include min1366 {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 1200px;
+    }
+
+    @include min1600{
+      margin: 0 auto;
+      max-width: 1480px;
+    }
+  }
+
+
+  &__politics{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    padding: 24px 15px;
+    color: var(--light-white);
+
+    @include min768 {
+      padding: 20px 30px;
+      font-size: 14px;
+
+      display: flex;
+      align-items: center;
+    }
+
+    @include min1366 {
+      padding: 20px 0px;
+    }
+  }
+
+  &__politic{
+
+    margin-top: 15px;
+    a{
+      transition: 0.3s;
+      color: var(--light-white);
+
+      &:hover{
+        color: var(--light-blue);
+      }
+    }
+
+    @include min768 {
+      margin: 0 0 0 40px;
+    }
+  }
+}
+
+
+.group-link{
+
+  &__list{
+    padding: 40px 15px;
+    @include bb;
+
+    @include min768 {
+      padding: 30px;
+    }
+
+    @include min1024 {
+      padding: 0;
+      &::before{
+        display: none;
+      }
+    }
+
+    @include min1366 {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  &__link{
+    a{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: var(--white);
+      transition: 0.3s;
+
+      @include min1024 {
+        &:hover{
+          color: var(--light-blue);
+        }
+      }
+    }
+
+    &:not(:first-child){
+      margin-top: 30px;
+    }
+
+    @include min768 {
+      a{
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
+}

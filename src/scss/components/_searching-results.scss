@@ -1,0 +1,149 @@
+.searching-results {
+  width: 100%;
+
+  .button-mobile{
+    display: none;
+  }
+
+  .search-judges__description {
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__search {
+    margin-bottom: 10px;
+
+    @include min1366 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__content {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    a {
+      display: block;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      text-decoration-line: underline;
+      color: #3fa8e3;
+      transition: 0.3s;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      @include min1024 {
+        &:hover {
+          text-decoration-line: none;
+        }
+      }
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #373b3f;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include min1366 {
+      padding: 35px 40px 40px;
+
+      a {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__button {
+    margin: 30px auto 0;
+
+    @include min1366 {
+      margin: 40px auto 0;
+    }
+  }
+
+  &__block {
+    max-width: 300px;
+    margin: 30px auto 0px;
+
+    @include min1024 {
+      max-width: 100%;
+      margin: 40px auto 0px;
+    }
+  }
+
+  &__result {
+    font-family: "Play";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include min1024 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__images {
+    display: flex;
+    justify-content: center;
+    margin: 0 -15px;
+  }
+
+  &__item {
+    margin: 0 15px;
+    svg {
+      width: 53px;
+      height: 53px;
+    }
+    .first {
+      fill: rgba(63, 168, 227, 0.2);
+      stroke: #3fa8e3;
+      animation: firstItem 4.8s infinite linear;
+    }
+
+    .second {
+      fill: rgba(229, 80, 48, 0.2);
+      stroke: #e55030;
+      animation: secondItem 4.8s infinite linear;
+    }
+
+    .third {
+      fill: rgba(255, 188, 0, 0.2);
+      stroke: #ffbc00;
+      animation:  thirdItem 4.8s infinite linear;
+    }
+
+
+    @include min1024 {
+      margin: 0 30px;
+      svg {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

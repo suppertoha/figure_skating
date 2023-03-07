@@ -1,0 +1,26 @@
+
+@include min1024 {
+  .icons-blue{
+    &:hover{
+      background: var(--icons-blue);
+    }
+  }
+
+  .icons-light-blue{
+    &:hover{
+      background: var(--icons-light-blue);
+    }
+  }
+
+  .icons-middle-blue{
+    &:hover{
+      background: var(--icons-middle-blue);
+    }
+  }
+
+  .header-politics{
+    &:hover{
+      background: var(--icons-middle-blue);
+    }
+  }
+}

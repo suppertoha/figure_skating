@@ -1,0 +1,42 @@
+/* stylelint-disable */
+
+@mixin for-desktop {
+  @media (min-width: (1025px)) {
+    @content;
+  }
+}
+
+@mixin min1600 {
+  @media (min-width: (1600px)) {
+    @content;
+  }
+}
+
+@mixin min1366 {
+  @media (min-width: (1366px)) {
+    @content;
+  }
+}
+
+@mixin min1024 {
+  @media (min-width: (1024px)) {
+    @content;
+  }
+}
+
+@mixin min768 {
+  @media (min-width: (768px)) {
+    @content;
+  }
+}
+
+@mixin min600 {
+  @media (min-width: (600px)) {
+    @content;
+  }
+}
+@mixin _1440 {
+  @media (max-width: 1440px){
+      @content;
+  }
+}

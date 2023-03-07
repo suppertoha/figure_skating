@@ -1,0 +1,246 @@
+.main {
+}
+.main-error {
+  @include bb;
+
+  &__body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+
+    @include min1024 {
+      padding: 80px 0;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    @include min1366 {
+      padding: 120px 0;
+    }
+
+    @include min1600 {
+      padding: 150px 0;
+    }
+  }
+
+  &__num {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    max-width: 345px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include min1024 {
+      margin: 0;
+      text-align: left;
+      max-width: 500px;
+    }
+
+    @include min1366 {
+      max-width: 600px;
+    }
+  }
+
+  &__item {
+    svg {
+      width: 103.3px;
+      height: 133.39px;
+    }
+
+    .first {
+      fill: rgba(63, 168, 227, 0.2);
+      stroke: #3fa8e3;
+      animation: firstItem 4.8s infinite linear;
+    }
+
+    .second {
+      fill: rgba(229, 80, 48, 0.2);
+      stroke: #e55030;
+      animation: secondItem 4.8s infinite linear;
+      margin: 0 20px;
+    }
+
+    .third {
+      fill: rgba(255, 188, 0, 0.2);
+      stroke: #ffbc00;
+      animation:  thirdItem 4.8s infinite linear;
+    }
+
+    @include min1024 {
+      svg {
+        width: 171.3px;
+        height: 238.39px;
+      }
+    }
+
+    @include min1366 {
+      svg {
+        width: 226.3px;
+        height: 293.39px;
+      }
+    }
+
+    @include min1600 {
+      svg {
+        width: 251px;
+        height: 324.5px;
+      }
+    }
+  }
+
+  &__title {
+    font-family: "Play";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+    margin: 0 auto;
+    color: #ffffff;
+
+    margin-bottom: 10px;
+
+    @include min1024 {
+      font-size: 40px;
+    }
+    @include min1366 {
+      font-size: 50px;
+    }
+    @include min1366 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 30px;
+
+    @include min1024 {
+      font-size: 16px;
+      margin-bottom: 33px;
+      max-width: 350px;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+
+    @include min1024 {
+      margin: 0;
+    }
+  }
+}
+
+@keyframes firstItem {
+  16.66666666666667% {
+    fill: rgba(63, 168, 227, 0.2);
+    stroke: #3fa8e3;
+  }
+
+  33.3333333333333% {
+    fill: rgba(255, 188, 0, 0.2);
+    stroke: #ffbc00;
+  }
+
+  49.8888888888888% {
+    fill: rgba(229, 80, 48, 0.2);
+    stroke: #e55030;
+  }
+
+  66.4444444444444% {
+    fill: rgba(151, 71, 255, 0.2);
+    stroke: #9747ff;
+  }
+
+  83% {
+    fill: rgba(151, 71, 255, 0.2);
+    stroke: #9747ff;
+  }
+
+  100% {
+    fill: rgba(63, 168, 227, 0.2);
+    stroke: #3fa8e3;
+  }
+}
+
+@keyframes secondItem {
+  16.66666666666667% {
+    fill: rgba(229, 80, 48, 0.2);
+    stroke: #e55030;
+  }
+
+  33.3333333333333% {
+    fill: rgba(151, 71, 255, 0.2);
+    stroke: #9747ff;
+  }
+
+  49.8888888888888% {
+    fill: rgba(255, 188, 0, 0.2);
+    stroke: #ffbc00;
+  }
+
+  66.4444444444444% {
+    fill: rgba(0, 173, 69, 0.2);
+    stroke: #00ad45;
+  }
+
+  83% {
+    fill:  rgba(63, 168, 227, 0.2);
+    stroke: #3fa8e3;
+  }
+
+  100% {
+    fill: rgba(229, 80, 48, 0.2);
+    stroke: #e55030;
+  }
+}
+
+@keyframes thirdItem {
+  16.66666666666667% {
+    fill: rgba(255, 188, 0, 0.2);
+    stroke: #FFBC00;
+  }
+
+  33.3333333333333% {
+    fill: rgba(0, 173, 69, 0.2);
+    stroke: #00AD45;
+  }
+
+  49.8888888888888% {
+    fill: rgba(151, 71, 255, 0.2);
+    stroke: #9747FF;
+  }
+
+  66.4444444444444% {
+    fill: rgba(63, 168, 227, 0.2);
+    stroke: #3FA8E3;
+  }
+
+  83% {
+    fill: rgba(255, 188, 0, 0.2);
+    stroke: #FFBC00;
+  }
+
+  100% {
+    fill: rgba(255, 188, 0, 0.2);
+    stroke: #FFBC00;
+  }
+}
+

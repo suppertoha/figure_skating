@@ -1,0 +1,180 @@
+.referee-cart {
+  margin-top: 30px;
+
+  @include min1024 {
+    margin-top: 0;
+  }
+
+  &__items {
+  }
+
+  &__title {
+    font-family: "Play";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    color: #1f2123;
+    margin-bottom: 15px;
+
+    @include min1366 {
+      font-size: 30px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 10px;
+
+    @include min1024 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__body {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+
+    @include min1024 {
+      padding: 27px 40px;
+    }
+  }
+
+  &__parent {
+    @include min1024 {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__name {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #8a96a1;
+    margin-bottom: 10px;
+
+    @include min1024 {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__description {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #373b3f;
+    margin-bottom: 30px;
+
+    p {
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
+    }
+
+    strong {
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #00ad45;
+      border-radius: 50px;
+      padding: 2px 15px;
+    }
+
+    @include min1024 {
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+  }
+
+  *.referee-cart__description{
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__dropdown {
+    margin-bottom: 20px;
+    &:not(:first-child) {
+      margin-top: 20px;
+
+      @include min600 {
+        margin: 0;
+      }
+    }
+  }
+
+  &__active {
+    @include min600 {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include min1024 {
+      grid-template-columns: repeat(2, 315px);
+    }
+  }
+
+  &__title {
+  }
+
+  &__dropdown {
+  }
+
+  &__loads {
+    margin-bottom: 40px;
+  }
+
+  &__table {
+  }
+}
+
+.sidebar-cart {
+  &__dropdown {
+  }
+}
+.dropdown {
+  &__button {
+    &_black {
+    }
+  }
+
+  &__list {
+    &_black {
+    }
+  }
+
+  &__list-item {
+  }
+
+  &__input-hidden {
+  }
+}
+.arrow-triangle {
+  &_white {
+  }
+}
+.button-loads {
+  &_blue {
+  }
+
+  &__icon {
+  }
+}
+.carts-magistrate {
+  &__table {
+  }
+}
+.table {
+}
+.table-referee {
+}

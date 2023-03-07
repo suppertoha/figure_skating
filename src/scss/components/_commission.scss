@@ -1,0 +1,131 @@
+
+.commission {
+
+  &__inner {
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    @include min1366 {
+      padding: 35px 40px;
+    }
+
+    p{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(    --light-black);
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+
+      @include min1366 {
+        font-size: 18px;
+
+        &:not(:last-child){
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    h2{
+      font-family: 'Play';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 130%;
+      color: #1F2123;
+      margin-bottom: 10px;
+      span{
+        display: block;
+      }
+
+      @media screen and (min-width: 450px) {
+        span{
+          display: inline-block;
+        }
+      }
+
+      a{
+        transition: 0.3s;
+        color: #42A0D5;
+        text-decoration: underline;
+
+        &:hover{
+          text-decoration: none;
+        }
+      }
+
+      @include min1366 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+    }
+
+    h2{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--light-black);
+      margin-bottom: 20px;
+
+      @include min1366 {
+        font-size: 18px;
+        font-weight: 400;
+
+        span{
+          font-weight: 600;
+        }
+      }
+    }
+
+  }
+
+  &__list {
+    margin-top: 30px;
+  }
+
+  &__item{
+    &:not(:first-child){
+      margin-top: 20px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #636B73;
+    max-width: 300px;
+
+    img{
+      margin-right: 15px;
+    }
+
+    @include min1024 {
+      &:hover{
+        color: #3FA8E3;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      max-width: 100%;
+    }
+
+    @include min1366 {
+      font-size: 14px;
+      line-height: 150%;
+    }
+
+
+  }
+}
+

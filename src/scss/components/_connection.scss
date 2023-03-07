@@ -1,0 +1,41 @@
+.connection {
+
+  &__phone {
+    color: var(--white);
+  }
+
+  &__mail {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+  }
+
+  &__item{
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child){
+      margin-top: 30px;
+    }
+
+    @include min1024 {
+      &:not(:first-child){
+        margin-top: 15px;
+      }
+    }
+  }
+
+  &__img{
+    display: flex;
+    align-items: flex-start;
+    fill: var(--white);
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+
+  &__link{
+    display: flex;
+    align-items: center;
+  }
+}
