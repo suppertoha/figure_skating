@@ -2444,6 +2444,9 @@ ul {
     margin-right: 80px;
   }
 }
+.main-layout__content {
+  margin-bottom: 0;
+}
 
 @media (min-width: 768px) {
   .cards-main__items {
