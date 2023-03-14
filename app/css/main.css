@@ -4547,6 +4547,7 @@ ul {
   border-radius: 10px;
   overflow: hidden;
   min-height: 300px;
+  cursor: pointer;
 }
 .cart-about__item:nth-child(n+9), .cart-about__item:nth-child(5), .cart-about__item:nth-child(8) {
   display: none;
@@ -5464,18 +5465,9 @@ ul {
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  cursor: pointer;
 }
 .list__item li:not(:first-child) {
   margin-top: 20px;
-}
-@media screen and (min-width: 1024px) {
-  .list__item li:hover {
-    color: #3fa8e3;
-  }
-  .list__item li:hover span {
-    border: 1px solid #3fa8e3;
-  }
 }
 .list__item li span {
   -webkit-transition: border 0.3s ease;
@@ -6108,6 +6100,9 @@ ul {
   top: 0px;
   z-index: 2;
 }
+.dropdown__button span.active {
+  color: #3fa8e3;
+}
 @media (min-width: 1024px) {
   .dropdown__button span:hover {
     color: #3fa8e3;
@@ -6732,7 +6727,6 @@ ul {
   }
   .table tbody tr:hover {
     background: rgba(63, 168, 227, 0.2);
-    outline: 2px solid #3fa8e3;
     border-radius: 10px;
     color: #ffffff;
   }
@@ -7027,7 +7021,6 @@ ul {
   }
   .table_calendar tbody tr:hover {
     background: rgba(63, 168, 227, 0.2);
-    outline: 2px solid #3fa8e3;
     border-radius: 10px;
     color: #ffffff;
   }
@@ -9398,6 +9391,9 @@ ul {
     font-size: 16px;
   }
 }
+.school-search__list .sidebar-cart__dropdown-filter .icon ~ .arrow-triangle {
+  display: none;
+}
 .school-search__list ul li {
   font-family: "Inter";
   font-style: normal;
@@ -9760,5 +9756,23 @@ ul {
   margin-right: 15px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+
+.sidebar-cart__dropdown-filter .icon {
+  position: relative;
+}
+.sidebar-cart__dropdown-filter .icon:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 5px;
+  position: absolute;
+  right: -12px;
+  background-size: contain;
+  top: calc(50% - 3px);
+  background-image: url(../img/icon-arrow.svg);
+}
+.sidebar-cart__dropdown-filter .icon ~ .arrow-triangle {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

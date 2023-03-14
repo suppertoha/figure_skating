@@ -5,7 +5,7 @@
     const inputElement = dropdownWrapper.querySelector('.dropdown__input-hidden');
     const dropdownButton = dropdownWrapper.querySelector('.dropdown__button span');
     const dropdownList = dropdownWrapper.querySelector('.dropdown__list');
-    
+
     //! Добавление класса visible dropdown. И кнопки класса active
     dropdownButton.addEventListener('click', function () {
       dropdownList.classList.toggle('visible');
@@ -21,6 +21,7 @@
         inputElement.value = this.dataset.value;
         dropdownList.classList.remove('visible');
         dropdownButton.classList.remove('active');
+        dropdownButton.classList.add('icon');
       });
     });
 

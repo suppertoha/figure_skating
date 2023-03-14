@@ -38,6 +38,10 @@
         z-index: 2;
       }
 
+      &.active{
+        color: #3fa8e3;
+      }
+
       @include min1024 {
         &:hover {
           color: #3fa8e3;

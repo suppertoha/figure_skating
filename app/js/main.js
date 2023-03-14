@@ -283,6 +283,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropdownWrapper) {
       inputElement.value = this.dataset.value;
       dropdownList.classList.remove('visible');
       dropdownButton.classList.remove('active');
+      dropdownButton.classList.add('icon');
     });
   });
 

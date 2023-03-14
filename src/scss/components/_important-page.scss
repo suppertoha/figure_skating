@@ -150,19 +150,8 @@
 
     li {
       transition: color 0.3s ease;
-      cursor: pointer;
       &:not(:first-child) {
         margin-top: 20px;
-      }
-
-      @media screen and (min-width: 1024px) {
-        &:hover {
-          color: #3fa8e3;
-
-          span {
-            border: 1px solid #3fa8e3;
-          }
-        }
       }
 
       span {
