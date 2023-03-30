@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container button-search-none">
+      @include('partials/header.html')
+      <main class="main main-error ">
+        <div class="main-error__body container">
+          <div class="main-error__inner ">
+            <ul class="main-error__num">
+              <li class="main-error__item">
+                <svg class="first">
+                  <use xlink:href="img/sprite.svg#4"></use>
+                </svg>
+              </li>
+
+              <li class="main-error__item">
+                <svg class="second">
+                  <use xlink:href="img/sprite.svg#0"></use>
+                </svg>
+              </li>
+
+              <li class="main-error__item">
+                <svg class="third">
+                  <use xlink:href="img/sprite.svg#4"></use>
+                </svg>
+              </li>
+            </ul>
+
+            <div class="main-error__content ">
+              <h2 class="main-error__title">
+                Такой страницы
+                не существует!
+              </h2>
+              <div class="main-error__text">Но вы можете ознакомиться с множеством
+                других полезных страниц</div>
+              <button class="main-error__button btn btn-arrow">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#arrow-back"></use>
+                </svg>
+                Назад
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>
+

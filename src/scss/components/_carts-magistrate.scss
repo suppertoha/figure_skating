@@ -1,0 +1,47 @@
+.carts-magistrate {
+  width: 100%;
+  &__inner {
+  }
+
+  &__table {
+    margin-bottom: 30px;
+  }
+
+  &__block{
+    @include min1024 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @include min1366 {
+      margin-top: 40px;
+    }
+  }
+
+  &__button {
+    margin: 0 auto 30px;
+    justify-content: center;
+    @include min1024 {
+      margin: 0;
+    }
+  }
+}
+
+.nav-block{
+  @include min1024 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button {
+    margin: 0 auto 30px;
+    justify-content: center;
+    @include min1024 {
+      margin: 0;
+    }
+  }
+}
+
+

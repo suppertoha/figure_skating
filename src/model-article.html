@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="main.html" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="navigation__list">
+                    <a href="#" class="navigation__link">Новости</a>
+                  </li>
+                  <li class="navigation__list navigation__list_violet">
+                    <span
+                      >Юношеский командный турнир по фигурному катанию
+                      на коньках «Кубок московского спорта» 2 тур</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">
+              Юношеский командный турнир по фигурному катанию на коньках «Кубок
+              московского спорта» 2 тур
+            </h1>
+            <div class="main-layout__row">
+              <section class="main-layout__inner main-layout__inner_one">
+                <section class="main-layout__testing testing">
+                  <div class="testing__buttons">
+                    <button class="testing__btn btn btn-violet">
+                      Новости
+                    </button>
+                    <button class="testing__btn btn btn-icon btn-icon_white">
+                      <span class="btn-icon__date">
+                        <svg class="btn-icon__icon">
+                          <use xlink:href="img/sprite.svg#calendon"></use>
+                        </svg>
+
+                        <span>26.04.2022</span>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="testing__inner testing__inner_section">
+                    <section>
+                      <ul>
+                        <li>
+                          <picture>
+                            <source
+                              srcset="img/articler.webp"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/articler.png"
+                              class="image"
+                              width=""
+                              height=""
+                              alt="articler"
+                            />
+                          </picture>
+                        </li>
+
+                        <li>
+                          <p>
+                            Pыбный текст — это текст, выполняющий исключительно
+                            утилитарную функцию. Он не вписывается в контекст
+                            сайта, на котором используется, и нужен только
+                            <a href="#"> для заполнения пространства</a>.
+                            Зачастую такой текст даже не имеет чёткого смысла
+                            и представляет собой набор слов и фраз, которые
+                            вроде бы формируют грамматически верные конструкции,
+                            но какой-либо мысли в них не прослеживается.
+                          </p>
+
+                          <p>
+                            Рыбу используют вебмастера, ссылка на источник,
+                            у которых нет под рукой готового текста, но нужно
+                            как-то оценить внешний вид контента на готовой
+                            странице. Оценить, насколько хорошо он вписывается
+                            в дизайн и не «плывёт» ли вёрстка.
+                          </p>
+
+                          <p>
+                            то наиболее распространённый вариант рыбного текста,
+                            использующийся в печатной индустрии, в дизайне
+                            и в разработке. Lorem Ipsum обрёл своё нынешнее
+                            назначение ещё в 16 веке.
+                          </p>
+
+                          <p>
+                            Lorem Ipsum был вновь популяризирован в 60-х годах,
+                            когда его использовали в качестве образца на листах
+                            Letraset. Позднее отрывок перекочевал в цифровой
+                            мир, где ему нашлось известное применение.
+                          </p>
+
+                          <p>
+                            С момента появления Lorem Ipsum практически
+                            не менялся. Появилось несколько вариаций
+                            (в том числе и юмористические версии).
+                          </p>
+                        </li>
+                      </ul>
+                    </section>
+
+                    <section>
+                      <h2>В соревнованиях участвовали команды:</h2>
+
+                      <ol>
+                        <li>ФАУ МО РФ ЦСКА СШОР им. С.А. Жука</li>
+                        <li>
+                          ГБУ «Московская академия фигурного катания на коньках»
+                          - Школа «Мечта», отделение «Умка».
+                        </li>
+                        <li>
+                          ГБУ «Московская академия фигурного катания на коньках»
+                          - Школа «Мечта», Отделение «Мечта».
+                        </li>
+                        <li>
+                          ГБУ «Московская академия фигурного катания на коньках»
+                          - школа «Сокольники»
+                        </li>
+                        <li>ООО СК «Армия Фигурного Катания»</li>
+
+                        <li>АНО ШФК «Старт»</li>
+
+                        <li>ООО «Клуб Лидер»</li>
+
+                        <li>ООО СК «Айс Скул»</li>
+
+                        <li>АНО «Лига фигурного катания»</li>
+
+                        <li>ООО «Академия спорта»</li>
+
+                        <li>ООО «Академия спорта»</li>
+                      </ol>
+                    </section>
+
+                    <ul>
+                      <li>
+                        <a
+                          href="images/kitten.jpg"
+                          class="download-text"
+                          download=""
+                        >
+                          <img src="img/download-pdf.svg" alt="pdf" />
+                          <span
+                            >Положение о контрольно-ревизионной
+                            комиссии.pdf</span
+                          >
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="images/kitten.jpg"
+                          class="download-text"
+                          download=""
+                        >
+                          <img src="img/download-doc.svg" alt="doc" />
+                          <span
+                            >Название прикреплённого текстового
+                            документа.doc</span
+                          >
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="images/kitten.jpg"
+                          class="download-text"
+                          download=""
+                        >
+                          <img src="img/download-xls.svg" alt="xls" />
+                          <span>Таблицы.xls</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

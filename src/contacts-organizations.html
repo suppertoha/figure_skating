@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="main.html" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="navigation__list">
+                    <span>Контакты вышестоящих организаций</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">Контакты вышестоящих организаций</h1>
+            <div class="main-layout__row">
+              <section class="main-layout__inner main-layout__inner_one">
+                <section class="main-layout__testing testing">
+                  <div class="testing__inner testing__inner_contact">
+
+                    <section>
+                      <p>
+                        Рыбный текст — это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен только для заполнения пространства. Зачастую такой текст даже не имеет чёткого смысла и представляет собой набор слов и фраз, которые вроде бы формируют грамматически верные конструкции, но какой-либо мысли в них не прослеживается.
+
+                      </p>
+
+                      <p>
+                        Рыбу используют вебмастера, веб-дизайнеры и разработчики, у которых нет под рукой готового текста, но нужно как-то оценить внешний вид контента на готовой странице. Оценить, насколько хорошо он вписывается в дизайн и не «плывёт» ли вёрстка.
+                      </p>
+                      <ul>
+                        <li>  <a href="#">Ссылка на организацию</a></li>
+                        <li>  <a href="#">Ссылка на организацию</a></li>
+                        <li>  <a href="#">Ссылка на организацию</a></li>
+                      </ul>
+                    </section>
+                  </div>
+                </section>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

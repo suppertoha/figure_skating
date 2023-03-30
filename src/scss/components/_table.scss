@@ -1,0 +1,660 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  thead {
+    display: table-header-group;
+    border-color: inherit;
+    display: none;
+    margin-bottom: 20px;
+
+    tr {
+      display: table;
+      width: calc(100% - 15px);
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    th {
+      vertical-align: text-top;
+      box-sizing: border-box;
+      font-family: "Inter";
+      text-align: left;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+
+    @include min1024 {
+      display: block;
+    }
+  }
+
+  tbody {
+    display: block;
+
+    tr {
+      display: table;
+      width: 100%;
+
+      table-layout: fixed;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      width: 100%;
+      color: #373b3f;
+      transition: 0.3s;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+
+
+      &:nth-child(n+4){
+        display: none;
+      }
+
+      @include min1024 {
+        outline: 2px solid transparent;
+
+        &:nth-child(n+10){
+          display: table;
+        }
+        &:hover {
+          background: rgba(63, 168, 227, 0.2);
+          //outline: 2px solid #3fa8e3;
+          border-radius: 10px;
+          color: #ffffff;
+
+          a {
+            color: #ffffff;
+          }
+
+          svg {
+            stroke: #ffffff;
+            fill: transparent;
+          }
+        }
+      }
+    }
+
+    td {
+      display: block;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      width: 100%;
+      text-align: left;
+      font-size: 18px;
+      padding: 0 20px;
+
+      @include min1024 {
+        padding: 18px 20px;
+      }
+
+      &::before {
+        display: block;
+        margin-bottom: 10px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #8a96a1;
+
+        @include min1024 {
+          display: none;
+        }
+      }
+
+      &:first-child {
+        padding-top: 20px;
+
+        @include min1024 {
+          padding-top: inherit;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 20px;
+        @include min1024 {
+          padding-top: inherit;
+        }
+      }
+
+      &:nth-child(1) {
+        &::before {
+          content: attr(data-name);
+        }
+      }
+
+      &:nth-child(2) {
+        &::before {
+          content: attr(data-category);
+        }
+      }
+
+      &:nth-child(3) {
+        &::before {
+          content: attr(data-order);
+        }
+      }
+
+      &:nth-child(4) {
+        &::before {
+          content: attr(data-document);
+        }
+      }
+
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+        width: 15px;
+        height: 15px;
+        stroke: #3fa8e3;
+        fill: #ffffff;
+        margin-right: 6px;
+        transition: 0.3s;
+      }
+
+      a {
+        transition: 0.3s;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        transition: 0.3s;
+        text-decoration-line: underline;
+        color: #3fa8e3;
+        @include min1024 {
+          &:hover {
+            text-decoration-line: none;
+          }
+        }
+      }
+
+      @include min1024 {
+        display: inline-block;
+        width: auto;
+        &:not(:first-child) {
+          margin: 0px;
+        }
+      }
+    }
+  }
+
+  td {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  th,
+  td {
+    @include min1024 {
+      padding: 0px 20px;
+      //display: inline-block;
+      width: 100%;
+      &:nth-child(1) {
+        width: 33%;
+      }
+
+      &:nth-child(2) {
+        width: 18%;
+      }
+
+      &:nth-child(3) {
+        width: 29%;
+      }
+
+      &:nth-child(4) {
+        width: 20%;
+      }
+    }
+
+    @include min1366 {
+      padding: 0px 20px;
+      display: inline-block;
+      width: 100%;
+      &:nth-child(1) {
+        width: 35%;
+      }
+
+      &:nth-child(2) {
+        width: 15%;
+      }
+
+      &:nth-child(3) {
+        width: 30%;
+      }
+
+      &:nth-child(4) {
+        width: 20%;
+      }
+    }
+
+    @include min1600 {
+      padding: 18px 20px;
+      display: inline-block;
+      width: 100%;
+      &:nth-child(1) {
+        width: 42%;
+      }
+
+      &:nth-child(2) {
+        width: 15%;
+      }
+
+      &:nth-child(3) {
+        width: 30%;
+      }
+
+      &:nth-child(4) {
+        width: 10%;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.table-referee {
+  thead {
+    th {
+      color: #373b3f;
+      font-weight: 600;
+    }
+  }
+
+  tbody {
+    display: block;
+
+    tr {
+      background: #ecf6fc;
+      font-weight: 400;
+      @include min1024 {
+        &:hover {
+          background: #ecf6fc;
+          outline: 2px solid transparent;
+          border-radius: 10px;
+          color: #373b3f;
+
+          a {
+            color: #3fa8e3;
+          }
+        }
+      }
+    }
+  }
+
+  th,
+  td {
+    @include min1024 {
+      &:nth-child(1) {
+        width: 25%;
+      }
+
+      &:nth-child(2) {
+        width: 45%;
+      }
+
+      &:nth-child(3) {
+        width: 30%;
+      }
+    }
+  }
+}
+
+.table_calendar {
+  width: 100%;
+  thead {
+    display: table-header-group;
+    border-color: inherit;
+    display: none;
+    margin-bottom: 20px;
+
+    tr {
+      display: table;
+      width: calc(100% - 15px);
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    th {
+      vertical-align: text-top;
+      box-sizing: border-box;
+      font-family: "Inter";
+      text-align: left;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+
+    @include min1600 {
+      display: block;
+      margin-bottom: 0px;
+      th{
+        vertical-align: middle;
+      }
+    }
+  }
+
+  tbody {
+    display: block;
+
+    tr {
+      display: table;
+      width: 100%;
+
+      table-layout: fixed;
+      background: #ffffff;
+      border-radius: 10px;
+      width: 100%;
+      color: #373b3f;
+      transition: 0.3s;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        @include min1600 {
+          margin-bottom: 0px;
+        }
+      }
+
+
+      &:nth-child(n+4){
+        display: none;
+      }
+
+      @include min1600 {
+        padding: 20px;
+
+        &:nth-child(n+10){
+          //display: table;
+        }
+        &:hover {
+          background: rgba(63, 168, 227, 0.2);
+          //outline: 2px solid #3fa8e3;
+          border-radius: 10px;
+          color: #ffffff;
+
+          a {
+            color: #ffffff;
+          }
+
+          svg {
+            stroke: #ffffff;
+            fill: transparent;
+          }
+        }
+      }
+    }
+
+    td {
+      display: block;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      width: 100%;
+      text-align: left;
+      font-size: 18px;
+      padding: 0 20px;
+
+      @include min1600 {
+        padding: 18px 20px;
+        display: table-cell;
+        vertical-align: inherit;
+      }
+
+      &::before {
+        display: block;
+        margin-bottom: 10px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #8a96a1;
+
+        @include min1600 {
+          display: none;
+        }
+      }
+
+      &:first-child {
+        padding-top: 20px;
+
+        @include min1600 {
+          padding-top: inherit;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 20px;
+        @include min1600 {
+          //padding-top: inherit;
+        }
+      }
+
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+        width: 15px;
+        height: 15px;
+        stroke: #3fa8e3;
+        fill: #ffffff;
+        margin-right: 6px;
+        transition: 0.3s;
+      }
+
+      a {
+        transition: 0.3s;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        transition: 0.3s;
+        text-decoration-line: underline;
+        color: #3fa8e3;
+        @include min1024 {
+          &:hover {
+            text-decoration-line: none;
+          }
+        }
+        @include min1600 {
+          font-size: 16px;
+
+        }
+      }
+
+      @include min1600 {
+        width: auto;
+        &:not(:first-child) {
+          margin: 0px;
+        }
+      }
+    }
+  }
+
+  td {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  th,
+  td {
+    @include min1600 {
+      padding: 15px;
+      width: 100%;
+      //&:nth-child(1) {
+      //  width: 33%;
+      //}
+      vertical-align: middle;
+
+    }
+
+  }
+}
+
+.table_calendar{
+
+  tbody{
+    tr{
+      background: rgba(63, 168, 227, 0.1);
+    border-radius: 10px;
+
+    @include min1600 {
+      background: transparent;
+      padding: 0;
+      //display: flex;
+    }
+      td {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        width: 100%;
+        text-align: left;
+        padding: 0 20px;
+        color: #ffffff;
+
+        strong{
+          font-size: 14px;
+          color: #CFD5D9;
+          display: block;
+          font-weight: 400;
+          margin-bottom: 5px;
+          &:not(:last-child){
+            margin-bottom: 10px;
+          }
+        }
+
+        p{
+          &:not(:last-child){
+          margin-bottom: 10px;
+          }
+        }
+
+        @include min1600 {
+          padding: 15px;
+        }
+
+
+        &::before {
+          display: block;
+          margin-bottom: 10px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          color: #8a96a1;
+
+          @include min1600 {
+            display: none;
+          }
+        }
+
+        &:first-child {
+          padding-top: 20px;
+
+        }
+
+        &:last-child {
+          margin-bottom: 20px;
+          @include min1600 {
+            margin-bottom: 0;
+          }
+        }
+
+        &:nth-child(1) {
+          &::before {
+            content: attr(data-number);
+          }
+        }
+
+        &:nth-child(2) {
+          &::before {
+            content: attr(data-date);
+          }
+        }
+
+        &:nth-child(3) {
+          &::before {
+            content: attr(data-name);
+          }
+        }
+
+        &:nth-child(4) {
+          &::before {
+            content: attr(data-place);
+          }
+        }
+
+
+        &:nth-child(5) {
+          &::before {
+            content: attr(data-program);
+          }
+        }
+
+        &:nth-child(6) {
+          &::before {
+            content: attr(data-judges);
+          }
+        }
+
+      }
+    }
+  }
+
+  th,
+  td {
+    @include min1600 {
+      background: rgba(63, 168, 227, 0.2);
+      border-radius: 5px;
+      border-spacing: 5px;
+      height: 100%;
+      &:nth-child(1) {
+        width: 7%;
+      }
+
+      &:nth-child(2) {
+        width: 7%;
+      }
+
+      &:nth-child(3) {
+        width: 25%;
+      }
+
+
+      &:nth-child(4) {
+        width: 15%;
+      }
+
+
+      &:nth-child(5) {
+        width: 21%;
+        p{
+          &:not(:last-child) {
+              margin-bottom: 0px;
+          }
+        }
+      }
+
+
+      &:nth-child(6) {
+        width: 16%;
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+.title-h1{
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 130%;
+  display: inline-block;
+
+  @include min1024 {
+    font-size: 35px;
+  }
+
+  @include min1366 {
+    font-size: 40px;
+  }
+
+  @include min1600 {
+    font-size: 50px;
+  }
+}
+
+
+.content-text {
+
+  &__inner {
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    @include min1366 {
+      padding: 35px 40px;
+    }
+
+
+    p{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(    --light-black);
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+
+      @include min1366 {
+        font-size: 18px;
+
+        &:not(:last-child){
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    h2{
+      font-family: 'Play';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 130%;
+      color: #1F2123;
+      margin-bottom: 10px;
+
+      a{
+        transition: 0.3s;
+        color: #42A0D5;
+        text-decoration: underline;
+
+        &:hover{
+          text-decoration: none;
+        }
+      }
+
+      @include min1366 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+    }
+
+    h3{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--light-black);
+      margin-bottom: 20px;
+
+      @include min1366 {
+        font-size: 18px;
+        font-weight: 400;
+
+        span{
+          font-weight: 600;
+        }
+      }
+    }
+
+    ul{
+      margin-top: -10px;
+    }
+
+    li{
+      padding-left: 20px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--light-black);
+      &:not(:first-child){
+        margin-top: 20px;
+      }
+
+      position: relative;
+      &:before{
+        content: '' ;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        background:  var(--light-blue);
+        border-radius: 50%;
+        left: 0px;
+        top: 6px;
+      }
+
+      @include min1366 {
+        font-size: 18px;
+
+        &:before{
+          width: 8px;
+          height: 8px;
+          top: 9px;
+        }
+      }
+    }
+
+    &_modal{
+      padding: 5px 0 0 0;
+      margin-top: 0px;
+
+      li{
+        span{
+          font-weight: 600;
+        }
+
+
+        a{
+          color: var(--light-blue);
+          border-bottom: 1px solid;
+          transition: 0.3s;
+
+          &:hover{
+            border-bottom: 1px solid transparent;
+          }
+        }
+      }
+    }
+
+  }
+}
+

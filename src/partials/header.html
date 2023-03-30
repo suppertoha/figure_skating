@@ -1,0 +1,201 @@
+<header class="header-block">
+  <a href="anti-doping-policy.html" class="header-politics mousemove-none">
+    <div class="container">
+      <div class="header-politics__text">Антидопинговая политика</div>
+    </div>
+  </a>
+
+  <div class="header mousemove-none">
+
+    <div class="container">
+      <div class="header__content">
+        <a href="main.html" class="header__logo logo">
+          <img
+            loading="lazy"
+            src="img/header-logo.svg"
+            class="logo__image"
+            width="128"
+            height="128"
+            alt="Логотип ФФКМ"
+          />
+
+          <div class="logo__name">
+            <span>Региональная общественная организация</span> <br />
+            Федерация фигурного катания на коньках города Москвы
+          </div>
+        </a>
+
+        <div class="header__body">
+          @include('_component/_location.html')
+          @include('_component/_connection.html')
+          @include('_component/_social.html')
+        </div>
+
+        <div class="header__menu">
+          <button
+            class="burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            data-burger
+          >
+            <span class="burger__line"></span>
+          </button>
+
+          <nav class="nav" data-menu>
+            <div class="nav__top">
+              @include('_component/_location.html')
+              @include('_component/_connection.html')
+              @include('_component/_social.html')
+            </div>
+            <ul class="nav__list">
+              <li class="nav__accordion accordion">
+                <button class="accordion__control accordion-start-js">
+                  <span class="accordion__title">Федерация</span>
+                  <span class="accordion__icon">
+                    <svg class="arrow-triangle">
+                      <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                    </svg>
+                  </span>
+                </button>
+
+                <ul class="accordion__content accordion-content-js">
+                  <li class="accordion__item"><a href="general-meeting.html">Общее собрание</a></li>
+                  <li class="accordion__item"><a href="president.html">Президент</a></li>
+                  <li class="accordion__item"><a href="presidium.html">Президиум</a></li>
+                  <ul class="accordion__next">
+                    <li class="accordion__wrap">
+                      <button class="accordion__btn accordion-start-js">
+                        <span class="accordion__title">Комиссия президиума</span>
+                        <span class="accordion__icon">
+                          <svg class="arrow-triangle">
+                            <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                          </svg>
+                        </span>
+                      </button>
+
+                      <ul class="accordion__inside accordion-content-js">
+                        <li><a href="commission.html"> Контрольно-ревизионная комиссия</a></li>
+                      </ul>
+                    </li>
+                    <li class="accordion__wrap">
+                      <button class="accordion__btn accordion-start-js">
+                        <span class="accordion__title">Дирекция ФФКМ</span>
+                        <span class="accordion__icon">
+                          <svg class="arrow-triangle">
+                            <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                          </svg>
+                        </span>
+                      </button>
+
+                      <ul class="accordion__inside accordion-content-js">
+                        <li><a href="directorate.html">Дирекция ФФКМ</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <li class="accordion__item">
+                    <a href="payment.html">Оплата членских взносов</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="muscovites.html">Москвичи - Заслуженные тренеры страны</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__accordion accordion">
+                <button class="accordion__control accordion-start-js">
+                  <span class="accordion__title">Сезон 2022/23</span>
+                  <span class="accordion__icon">
+                    <svg class="arrow-triangle">
+                      <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                    </svg>
+                  </span>
+                </button>
+
+                <ul class="accordion__content accordion-content-js">
+                  <li class="accordion__item"><a href="current-competitions.html">Соревнования</a></li>
+                  <li class="accordion__item"><a href="testing.html">Тестирование</a></li>
+                  <li class="accordion__item"><a href="seminars.html">Семинары</a></li>
+                </ul>
+              </li>
+
+              <li class="nav__accordion accordion">
+                <button class="accordion__control accordion-start-js">
+                  <span class="accordion__title">Документы</span>
+                  <span class="accordion__icon">
+                    <svg class="arrow-triangle">
+                      <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                    </svg>
+                  </span>
+                </button>
+
+                <ul class="accordion__content accordion-content-js">
+                  <li class="accordion__item"><a href="athletes.html">Спортсменам</a></li>
+                  <li class="accordion__item"><a href="#">Тренерам</a></li>
+                  <li class="accordion__item"><a href="#">Судьям</a></li>
+                  <li class="accordion__item"><a href="#">Организациям</a></li>
+                  <li class="accordion__item"><a href="#">Членам ФФКМ</a></li>
+                </ul>
+              </li>
+
+              <li class="nav__accordion accordion">
+                <button class="accordion__control accordion-start-js">
+                  <span class="accordion__title">Найти школу</span>
+                  <span class="accordion__icon">
+                    <svg class="arrow-triangle">
+                      <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                    </svg>
+                  </span>
+                </button>
+
+                <ul class="accordion__content accordion-content-js">
+                  <li class="accordion__item">
+                    <a href="training.html"
+                      >Организации, осуществляющие спортивную подготовку</a
+                    >
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#">Организации массового спорта</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#">Индивидуальные предприниматели</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__accordion accordion">
+                <button class="accordion__control accordion-start-js">
+                  <span class="accordion__title">Контакты</span>
+                  <span class="accordion__icon">
+                    <svg class="arrow-triangle">
+                      <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                    </svg>
+                  </span>
+                </button>
+
+                <ul class="accordion__content accordion-content-js">
+                  <li class="accordion__item">
+                    @include('_component/_location.html')
+                  </li>
+                  <li class="accordion__item">
+                    @include('_component/_connection.html')
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__accordion accordion">
+                <a href="#" class="accordion__control accordion__control_politic">
+                  Антидопинговая политика
+                </a>
+
+              </li>
+            </ul>
+
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+

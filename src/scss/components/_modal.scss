@@ -1,0 +1,158 @@
+.graph-modal {
+  background: var(--white);
+  @media screen and (min-width: 1024px) {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__container {
+    width: 98%;
+    margin: 0px auto;
+    height: 100%;
+    padding: 50px 10px;
+
+    @media screen and (min-width: 1024px) {
+      width: 850px;
+      margin: 50px auto;
+      height: auto;
+    }
+
+    @include min1366 {
+      padding: 30px 40px 40px;
+    }
+  }
+
+  &__close {
+    right: 15px;
+    top: 15px;
+    padding: 0;
+    width: 30px;
+    height: 25px;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+
+    @include min1366 {
+      width: 15px;
+      height: 15px;
+      right: 25px;
+      top: 25px;
+    }
+  }
+
+  &__content {
+  }
+}
+.btn-reset {
+}
+.js-modal-close {
+}
+.content-modal {
+  &__inner {
+  }
+
+  &__name {
+    font-family: "Play";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    color: #1f2123;
+    display: block;
+
+    @include min1366 {
+      font-size: 30px;
+    }
+  }
+
+  &__profile {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #8a96a1;
+    margin-bottom: 18px;
+    display: inline-block;
+  }
+
+  &__content {
+    max-height: 660px;
+    overflow-y: auto;
+    padding-right: 15px;
+
+
+    &::-webkit-scrollbar {
+      height: 100%;
+      width: 4px;
+      background: #d0d0d0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #3FA8E3;
+      border-radius: 8px;
+    }
+
+    @media screen and (min-width: 600px) {
+      display: flex;
+      max-height: 300px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 327px;
+    max-height: 436px;
+    margin: 0 auto 20px;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+
+      //@media screen and (min-width: 500px) {
+      //  object-position: 50% 10%;
+      //}
+    }
+
+    @media screen and (min-width: 600px) {
+      margin: 0 20px 0 0;
+      flex-shrink: 0;
+      max-width: 225px;
+      img {
+        height: 300px;
+      }
+    }
+
+    @include min1366 {
+      margin: 0 40px 0 0;
+    }
+  }
+
+  &__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #373b3f;
+
+    p {
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+
+    @include min1366 {
+      p {
+        &:not(:first-child) {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
+
+.simplebar-content:after, .simplebar-content:before {
+  content: " ";
+  display: table;
+}

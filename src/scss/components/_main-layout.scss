@@ -1,0 +1,141 @@
+.main-layout {
+
+  margin-top: 30px;
+  padding-bottom: 60px;
+
+  @include min768 {
+    padding-bottom: 70px;
+  }
+
+  &__title{
+    margin-bottom: 30px;
+
+    @include min1024 {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include min1366 {
+    margin-top: 70px;
+    &_content{
+      margin-top: 40px;
+    }
+  }
+
+  @include min1600 {
+    margin-top: 80px;
+    padding-bottom: 80px;
+
+    &_content{
+      margin-top: 40px;
+      padding-bottom: 100px;
+    }
+  }
+
+  &__row {
+    @include min1024 {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    &_reverse{
+      flex-direction: row;
+    }
+  }
+
+  &__inner {
+    min-width: 1px;
+    align-self: flex-start;
+
+    @include min1024 {
+      position: sticky;
+      top: 0;
+    }
+
+    &_content{
+      margin-bottom: 40px;
+    }
+    margin-bottom: 60px;
+
+    @include min1024 {
+      margin-bottom: 70px;
+    }
+
+    @include min1024 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+
+    &_filter{
+      margin-bottom: 0;
+    }
+
+    &_one{
+      margin-bottom: 0;
+    }
+
+    &_margin-none{
+      margin-bottom: 0;
+    }
+  }
+
+  &__text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #DADADA;
+    margin-bottom: 20px;
+
+    a{
+      color: #3FA8E3;
+      border-bottom: 1px solid ;
+    }
+
+    @include min1024 {
+      margin-bottom: 40px;
+      max-width: 1165px;
+      font-size: 18px;
+      &::before{
+        border-bottom: 1px solid transparent;
+      }
+    }
+    @include min1366 {
+    margin-bottom: 60px;
+    }
+  }
+
+  &__sidebar {
+    width: 100%;
+    align-self: flex-start;
+    @include min1024 {
+      position: sticky;
+      top: 0;
+    }
+
+    &_hidden{
+      display: none;
+    }
+
+    @include min1024 {
+      display: block;
+      width: 285px;
+      min-width: 285px;
+      margin-right: 35px;
+    }
+
+    @include min1600 {
+      min-width: 316px;
+      margin-right: 80px;
+    }
+
+  }
+
+  &__content{
+    margin-bottom: 0;
+  }
+}
+

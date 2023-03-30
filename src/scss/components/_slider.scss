@@ -1,0 +1,289 @@
+.main-slider {
+  &__wrapper {
+  }
+
+  &__slide {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  &__item {
+    picture{
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    position: relative;
+    img {
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    @include min1366 {
+      max-height: 300px;
+      &_height {
+        max-height: 200px;
+      }
+    }
+  }
+
+  &__pagination {
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+      width: 4px;
+      height: 4px;
+      background: #ffffff;
+      border-radius: 5px;
+      //opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 60px;
+      height: 4px;
+    }
+  }
+
+  &__btn {
+    opacity: 0;
+    visibility: hidden;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    &:hover {
+      svg {
+        fill: var(--light-blue);
+      }
+    }
+
+    svg {
+      width: 9px;
+      height: 16px;
+      fill: var(--color-nav);
+      transition: 0.3s;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    @include min768 {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__next {
+    right: 20px;
+  }
+
+  &__prev {
+    left: 20px;
+    transform: rotate(180deg);
+  }
+}
+
+.main-slider__prev_bottom{
+  transform: rotate(-180deg);
+}
+
+.nav-calendar {
+  &__wrapper {
+  }
+
+  &__slide {
+    width: auto !important;
+  }
+
+  &__item {
+    width: auto !important;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1f2123;
+    padding: 5px 10px;
+
+    background: #ffffff;
+    border-radius: 39px;
+
+    &.active-calendar {
+      background: #3fa8e3;
+      color: #ffffff;
+    }
+  }
+
+  &__next {
+  }
+
+  &__btn {
+    opacity: 0;
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    &:hover {
+      svg {
+        fill: var(--light-blue);
+      }
+    }
+
+    svg {
+      width: 9px;
+      height: 16px;
+      fill: var(--color-nav);
+      transition: 0.3s;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    @include min1024 {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__prev {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+/*--- 'Swiper' Carousel ---*/
+
+//.swiper,
+//.swiper-slide img {
+//  width: 100%;
+//  max-width: 1000px;
+//  height: 100%;
+//}
+
+/*--- Previous & Next Buttons ---*/
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border: 2px solid #fff;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+/*--- Progress Bar ---*/
+
+.carousel-progress {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 4px;
+  position: relative;
+
+  margin: 0px auto 0 auto;
+  //background-color: #272727;background: rgba(255, 255, 255, 0.15);
+  background: #ffffff;
+  border-radius: 5px;
+  z-index: 1 !important;
+
+  @include min768 {
+    width: 90px;
+    height: 6px;
+  }
+  @include min1024 {
+    width: 120px;
+    height: 8px;
+  }
+}
+
+.bullet-element {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+  li {
+    margin: 0 2.5px;
+
+    @include min768 {
+      margin: 0 3.7px;
+    }
+
+    @include min1024 {
+      margin: 0 5px;
+    }
+  }
+  &__item {
+    background: #3fa8e3;
+    border-radius: 5px;
+    height: 4px;
+    width: 4px;
+    @include min768 {
+      width: 6px;
+      height: 6px;
+    }
+    @include min1024 {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  @include min768 {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  @include min1024 {
+    bottom: 20px;
+  }
+}
+
+.progress {
+  position: absolute;
+  height: 4px;
+  background-color: #3fa8e3;
+  border-radius: 5px;
+  animation-name: progress;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+
+  @include min768 {
+    height: 6px;
+  }
+  @include min1024 {
+    height: 8px;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

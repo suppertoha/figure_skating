@@ -1,0 +1,211 @@
+/*Dropdown*/
+.dropdown {
+  &__button {
+    position: relative;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    background: transparent;
+
+    opacity: 1;
+    transition: 300ms;
+    cursor: pointer;
+
+    span {
+      color: #1f2123;
+      padding: 15px 30px 15px 15px;
+      background: #ffffff;
+      border-radius: 10px;
+      width: 100%;
+      transition: 0.3s;
+      display: block;
+      width: 100%;
+
+      position: relative;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+      }
+
+      &.active{
+        color: #3fa8e3;
+      }
+
+      @include min1024 {
+        &:hover {
+          color: #3fa8e3;
+        }
+      }
+    }
+
+    .arrow-triangle {
+      position: absolute;
+      right: 15px;
+      top: calc(50% - 4px);
+      transition: 0.3s;
+      display: flex;
+      align-items: flex-start;
+      fill: #000000;
+      transform: rotateX(-180deg);
+
+      &_white {
+        fill: #ffffff;
+      }
+
+      &_black {
+        fill: #252728;
+      }
+    }
+
+
+
+    .active {
+      margin-bottom: 0px;
+      ~ .arrow-triangle {
+        fill: #3fa8e3;
+        transform: rotateX(0deg);
+      }
+
+      ~ .arrow-triangle_black {
+        fill: #252728;
+      }
+    }
+
+    &_transparent {
+      span {
+        padding: 15px 30px 15px 20px;
+        border: 2px solid;
+        background: transparent;
+        color: #ffffff;
+
+        @include min1024 {
+          &:hover {
+            border: 2px solid #3fa8e3;
+          }
+        }
+      }
+
+      .arrow-triangle {
+        right: 20px;
+      }
+
+      .active {
+        background: rgba(63, 168, 227, 0.2);
+        border: 2px solid #3fa8e3;
+        color: #ffffff;
+        ~ .arrow-triangle {
+          fill: #ffffff;
+          transform: rotateX(0deg);
+        }
+      }
+    }
+
+    &_black {
+      span {
+        color: #373b3f;
+        border: 2px solid #252728;
+
+        &.active {
+          color: #373b3f;
+          background: #d9eef9;
+          border: 2px solid #3fa8e3;
+        }
+
+        @include min1024 {
+          &:hover {
+            background: #d9eef9;
+            border: 2px solid #3fa8e3;
+          }
+        }
+      }
+    }
+  }
+
+  &__list {
+    max-height: 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+    box-sizing: content-box;
+    color: #1f2123;
+    padding: 0 15px;
+
+    background: #fff;
+    overflow: hidden;
+    border-radius: 6px;
+    transition: 300ms;
+
+    &.visible {
+      padding: 15px 15px;
+      max-height: inherit;
+      opacity: 1;
+      overflow: visible;
+      visibility: visible;
+      transform: none;
+      margin-bottom: 20px;
+      margin-top: 5px;
+
+      @include min1024 {
+        margin-top: 10px;
+      }
+    }
+
+    &_transparent {
+      background: rgba(63, 168, 227, 0.2);
+      color: #ffffff;
+      padding: 0 20px;
+
+      &.visible {
+        padding: 15px 20px;
+      }
+
+      .dropdown__list-item {
+        &:not(:first-child) {
+          margin-top: 15px;
+        }
+      }
+    }
+
+    &_black {
+      background: #d9eef9;
+    }
+  }
+
+  &__list-item {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    transition: 300ms;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+
+    @include min1024 {
+      &:hover {
+        color: #3fa8e3;
+      }
+    }
+  }
+
+  &__input-hidden {
+    display: none;
+    color: red;
+  }
+}

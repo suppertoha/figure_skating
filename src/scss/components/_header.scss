@@ -1,0 +1,310 @@
+.header-politics {
+  color: var(--white);
+  display: block;
+  transition: 0.3s;
+  @include bb;
+
+  &__text {
+    display: none;
+    @include min1024 {
+      display: block;
+      text-align: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 12px 0;
+    }
+  }
+}
+
+.header {
+  transition: 0.3s;
+
+  @include bb;
+  padding: 17px 0;
+  z-index: 100;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+  }
+
+  &__body {
+    display: none;
+
+    @include min1024 {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .location {
+    margin-bottom: 30px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    max-width: 100%;
+
+    @include min1024 {
+      max-width: 320px;
+      &__image {
+        flex-shrink: 0;
+        margin-right: 0px;
+
+        svg {
+          width: 16px;
+          height: 20px;
+        }
+
+        @include icons;
+      }
+
+      &__items {
+        display: none;
+      }
+
+      margin: 0 30px 0 0;
+    }
+
+    @include min1600 {
+      display: flex;
+      align-items: center;
+      &__items {
+        display: block;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .connection {
+    margin: 0 0 30px 0;
+
+    @include min1024 {
+      margin: 0 30px 0 0;
+    }
+
+    @include min1366 {
+      &__item {
+        &:not(:first-child) {
+          margin: 0;
+        }
+      }
+
+      &__link {
+        display: inline-flex;
+        justify-content: center;
+        transition: 0.3s;
+        height: 100%;
+        width: 100%;
+        padding: 0px 20px;
+        border-radius: 47px;
+        font-size: 16px;
+
+        &:hover {
+          background: var(--icons-middle-blue);
+        }
+      }
+
+      &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 2px solid #ffffff;
+        border-radius: 40px;
+        min-height: 50px;
+        padding: 3px;
+        font-size: 18px;
+      }
+
+      &__img {
+        display: none;
+      }
+    }
+  }
+
+  .social {
+    @include min1024 {
+
+      &__item {
+        &:not(:first-child) {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .nav__top{
+    padding: 0 15px 30px;
+
+    @include min768 {
+      padding: 0 15px 60px;
+
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+
+  &__image {
+    transition: 0.3s;
+    margin-right: 11px;
+    width: 58px;
+    height: 58px;
+
+    @include min768 {
+      width: 105px;
+      height: 105px;
+      margin-right: 15px;
+    }
+
+    @include min1600 {
+      width: 120px;
+      height: 120px;
+      margin-right: 20px;
+    }
+
+    @include min1600 {
+      width: 128px;
+      height: 128px;
+      margin-right: 20px;
+    }
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    max-width: 224px;
+    margin-right: 10px;
+
+    span {
+      display: inline-block;
+      font-size: 10px;
+      line-height: 150%;
+      color: var(--light-white);
+      margin-bottom: 5px;
+    }
+
+    @include min768 {
+      font-size: 20px;
+      max-width: 340px;
+
+      span {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+    }
+
+    @include min1366 {
+      font-size: 22px;
+      max-width: 400px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.burger {
+  @include burger;
+}
+
+.arrow-triangle {
+  width: 6px;
+  height: 8px;
+  fill: var(--white);
+}
+
+.header-block {
+  background: #14202b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  &.active-scroll {
+  }
+  @include min1366 {
+    &.active-scroll {
+      .header {
+        padding: 10px 0;
+        &__logo {
+        }
+      }
+
+      .logo {
+        &__image {
+          width: 76px;
+          height: 76px;
+          margin-right: 15px;
+        }
+
+        &__name {
+          font-size: 18px;
+          max-width: 390px;
+          span {
+            font-size: 14px;
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  @include min1600 {
+    &.active-scroll {
+      .logo {
+        &__name {
+          font-size: 16px;
+          max-width: 470px;
+        }
+      }
+
+      .location {
+        &__img {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+.fixed {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+
+.stopped {
+  position: absolute;
+}
+
+.main {
+  padding-top: 125px;
+  @include bb;
+
+  @media screen and (min-width: 360px) {
+    padding-top: 90px;
+  }
+
+  @include min768 {
+    padding-top: 140px;
+
+  }
+
+  @include min1024 {
+    padding-top: 180px;
+  }
+
+  @include min1366 {
+    padding-top: 200px;
+  }
+}

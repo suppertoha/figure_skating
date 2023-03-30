@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="main__slider container">
+        @include('partials/_component/_slider.html')
+      </section>
+      <section class="main__menu">
+        @include('partials/main-menu.html')
+      </section>
+
+      <section class="main__layout main-layout">
+        <div class="main-layout__container container">
+
+          <div class="main-layout__row">
+            <section class="main-layout__inner">
+
+              <div class="main-layout__content js-scroll">
+                <div class="main__slider_inside mousemove-none">
+                  <!-- slider-inside -->
+                  @include('partials/_component/_slider/_slider-inside.html')
+                  <!--end slider-inside -->
+                </div>
+
+                <div class="main__cards mousemove-none">
+                  @include('partials/_component/_cards-main.html')
+                </div>
+              </div>
+            </section>
+
+            @include('partials/_component/_sidebar-cart.html')
+          </div>
+
+
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+  </div>
+
+</body>
+
+</html>

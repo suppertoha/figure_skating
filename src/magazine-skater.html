@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="main.html" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="navigation__list">
+                    <span>Журнал Московский Фигурист</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">
+              Журнал Московский Фигурист
+            </h1>
+            <div class="main-layout__row">
+              <section class="main-layout__magazine magazine">
+                <div class="magazine__inner">
+                  <div class="magazine__block">
+                    <p>
+                      Бюллетень выходит раз в квартал и распространяется
+                      бесплатно. «Московский Фигурист» можно получить в Дирекции
+                      Федерации по предварительной заявке при наличии
+                      необходимого количества экземпляров.
+                    </p>
+                    <p>
+                      Журнал «Московский фигурист» с января 2013 года имеет свой
+                      собственный сайт
+                      <a href="http://mosfigurist.ru/">www.mosfigurist.ru</a> ,
+                      на котором теперь можно найти и прочитать любые статьи,
+                      которые были опубликованы в нашем печатном издании. Больше
+                      не надо скачивать журнл в формате pdf, чтобы подробнее
+                      ознакомиться с материалами журнала. На сайте мы
+                      постарались сделать удобную систему поиска статей по
+                      интересующей вас тематике. Также вы можете оставить
+                      комментарии, в которых можно задать вопросы авторам
+                      статей, высказать свое мнение по поводу прочитанного и
+                      предложить новые темы для будущих статей по интересующим
+                      вас вопросам.
+                    </p>
+                    <p>С уважением, редакция журнала «Московский фигурист»</p>
+                  </div>
+
+                  <ul class="magazine__items">
+                    <li class="magazine__item">
+                      <div class="magazine__image">
+                        <picture>
+                          <source
+                            srcset="img/image-sidebar-2.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/image-sidebar-2.png"
+                            class="image"
+                            width=""
+                            height=""
+                            alt="magazine"
+                          />
+                        </picture>
+                      </div>
+
+                      <div class="magazine__content">
+                        <h2 class="magazine__title">
+                          «Московский фигурист» №4 (64) 2021
+                        </h2>
+                        <p>
+                          <strong>Отчет ФФКМ</strong>
+
+                          Отчет Федерации за 4 года по всем направлениям
+                          деятельности.
+                        </p>
+
+                        <p>
+                          <strong> Разрешите представить</strong>
+
+                          Интервью с Ириной Слуцкой о ее спортивной и после
+                          спортивной жизни.
+                        </p>
+
+                        <p>
+                          <strong> Как стать Олимпийским чемпионом</strong>
+
+                          Интервью с олимпийской чемпионкой Ксенией Столбовой о
+                          ее пути к вершине.
+                        </p>
+
+                        <p>
+                          <strong>Школы фигурного катания</strong>
+
+                          Статья про московский клуб «Армия фигурного катания»,
+                          который работает по стандартам школы олимпийского
+                          резерва.
+                        </p>
+
+                        <div class="magazine__buttons">
+                          <button class="magazine__icon btn btn-download">
+                            <svg class="">
+                              <use
+                                xlink:href="img/sprite.svg#arrow-download"
+                              ></use>
+                            </svg>
+                          </button>
+
+                          <button class="magazine__btn btn btn-black">
+                            Подробнее
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="magazine__item">
+                      <div class="magazine__image">
+                        <picture>
+                          <source
+                            srcset="img/image-sidebar-3.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/image-sidebar-3.png"
+                            class="image"
+                            width=""
+                            height=""
+                            alt="magazine"
+                          />
+                        </picture>
+                      </div>
+
+                      <div class="magazine__content">
+                        <h2 class="magazine__title">
+                          «Московский фигурист» №3 (63) 2021
+                        </h2>
+                        <p>
+                          <strong>Миссия выполнима</strong>
+
+                          Интервью с перспективными фигуристами СШОР «Москвич»,
+                          которые получили в группе Виктории Волчковой второй
+                          шанс на успех.
+                        </p>
+
+                        <p>
+                          <strong>    Отличительная черта</strong>
+
+                          Экспертная статья Ольги Марковой о тонкостях определения уровней сложности, подготовленная на основе проведенного вебинара для московских тренеров.
+                        </p>
+
+                        <p>
+                          <strong>Art-подготовка</strong>
+
+                          Интервью с молодым, но уже очень популярным хореографом-постановщиком программ Никитой Михайловым.
+                        </p>
+
+                        <p>
+                          <strong>Спорт без травм</strong>
+                        </p>
+
+                        <div class="magazine__buttons">
+                          <button class="magazine__icon btn btn-download">
+                            <svg class="">
+                              <use
+                                xlink:href="img/sprite.svg#arrow-download"
+                              ></use>
+                            </svg>
+                          </button>
+
+                          <button class="magazine__btn btn btn-black">
+                            Подробнее
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="magazine__item">
+                      <div class="magazine__image">
+                        <picture>
+                          <source
+                            srcset="img/magazine-3.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/magazine-3.png"
+                            class="image"
+                            width=""
+                            height=""
+                            alt="magazine"
+                          />
+                        </picture>
+                      </div>
+
+                      <div class="magazine__content">
+                        <h2 class="magazine__title">
+                          «Московский фигурист» №3 (55) 2019
+                        </h2>
+                        <p>
+                          <strong>Отчет ФФКМ</strong>
+
+                          Отчет Федерации за 4 года по всем направлениям
+                          деятельности.
+                        </p>
+
+                        <p>
+                          <strong> Разрешите представить</strong>
+
+                          Интервью с Ириной Слуцкой о ее спортивной и после
+                          спортивной жизни.
+                        </p>
+
+                        <p>
+                          <strong> Как стать Олимпийским чемпионом</strong>
+
+                          Интервью с олимпийской чемпионкой Ксенией Столбовой о
+                          ее пути к вершине.
+                        </p>
+
+                        <p>
+                          <strong>Школы фигурного катания</strong>
+
+                          Статья про московский клуб «Армия фигурного катания»,
+                          который работает по стандартам школы олимпийского
+                          резерва.
+                        </p>
+
+                        <div class="magazine__buttons">
+                          <button class="magazine__icon btn btn-download">
+                            <svg class="">
+                              <use
+                                xlink:href="img/sprite.svg#arrow-download"
+                              ></use>
+                            </svg>
+                          </button>
+
+                          <button class="magazine__btn btn btn-black">
+                            Подробнее
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="magazine__item">
+                      <div class="magazine__image">
+                        <picture>
+                          <source
+                            srcset="img/magazine-4.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/magazine-4.png"
+                            class="image"
+                            width=""
+                            height=""
+                            alt="magazine"
+                          />
+                        </picture>
+                      </div>
+
+                      <div class="magazine__content">
+                        <h2 class="magazine__title">
+                          «Московский фигурист» №3 (63) 2021
+                        </h2>
+                        <p>
+                          <strong>Миссия выполнима</strong>
+
+                          Интервью с перспективными фигуристами СШОР «Москвич»,
+                          которые получили в группе Виктории Волчковой второй
+                          шанс на успех.
+                        </p>
+
+                        <p>
+                          <strong>    Отличительная черта</strong>
+
+                          Экспертная статья Ольги Марковой о тонкостях определения уровней сложности, подготовленная на основе проведенного вебинара для московских тренеров.
+                        </p>
+
+                        <p>
+                          <strong>Art-подготовка</strong>
+
+                          Интервью с молодым, но уже очень популярным хореографом-постановщиком программ Никитой Михайловым.
+                        </p>
+
+                        <p>
+                          <strong>Спорт без травм</strong>
+                        </p>
+
+                        <div class="magazine__buttons">
+                          <button class="magazine__icon btn btn-download">
+                            <svg class="">
+                              <use
+                                xlink:href="img/sprite.svg#arrow-download"
+                              ></use>
+                            </svg>
+                          </button>
+
+                          <button class="magazine__btn btn btn-black">
+                            Подробнее
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <button class="magazine__button button-loads show-more">
+                    <svg class="button-loads__icon">
+                      <use xlink:href="img/sprite.svg#loading"></use>
+                    </svg>
+                    Показать еще
+                  </button>
+
+                  <sidebar class="magazine__cart sidebar-cart">
+                    <section class="sidebar-cart__inner">
+                      <ul class="sidebar-cart__items">
+
+                        <li class="sidebar-cart__item sidebar-cart__item_big">
+                          <div class="sidebar-cart__body">
+                            <div class="sidebar-cart__img">
+                              <picture>
+                                <source srcset="img/image-sidebar-1.webp" type="image/webp">
+                                <img loading="lazy" src="img/image-sidebar-1.jpg" class="image" alt="">
+                              </picture>
+                            </div>
+
+                            <div class="sidebar-cart__content">
+                              <button class="sidebar-cart__button btn btn-icon">
+                                <span class="btn-icon__date">
+                                  <svg class="btn-icon__icon">
+                                    <use xlink:href="img/sprite.svg#calendon"></use>
+                                  </svg>
+
+                                  <span>26.04.2022</span>
+                                </span>
+                              </button>
+                              <span class="sidebar-cart__name">День рождения Камилы Валиевой</span>
+                              <div class="sidebar-cart__description">
+                                Олимпийская чемпионка в&nbsp;командном соревновании,
+                                чемпионка Европы
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="sidebar-cart__item sidebar-cart__item_big">
+                          <div class="sidebar-cart__images">
+                            <picture>
+                              <source srcset="img/image-sidebar-2.webp" type="image/webp">
+                              <img loading="lazy" src="img/image-sidebar-2.jpg" class="image" alt="gallery">
+                            </picture>
+                          </div>
+                        </li>
+
+                        <li class="sidebar-cart__item cart-btn">
+                          <div class="cart-btn__contain">
+                            <div class="cart-btn__image">
+                              <picture>
+                                <source srcset="img/image-sidebar-3.jpg" type="image/webp">
+                                <img loading="lazy" src="img/image-sidebar-3.jpg." class="image" alt="gallery">
+                              </picture>
+                            </div>
+
+                            <span class="cart-btn__description">Музей фигурного катания</span>
+                            <a href="#" class="cart-btn__link btn-link">Перейти</a>
+                          </div>
+                        </li>
+
+                        <li class="sidebar-cart__item cart-btn">
+                          <div class="cart-btn__contain">
+                            <div class="cart-btn__image">
+                              <picture>
+                                <source srcset="img/image-sidebar-4.jpg" type="image/webp">
+                                <img loading="lazy" src="img/image-sidebar-4.jpg." class="image" alt="gallery">
+                              </picture>
+                            </div>
+
+                            <span class="cart-btn__description">Фотогалерея</span>
+                            <a href="#" class="cart-btn__link btn-link">Перейти</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </section>
+                  </sidebar>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

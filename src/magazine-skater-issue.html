@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout main-layout_content">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="main.html" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="navigation__list">
+                    <a href="magazine-skater.html" class="navigation__link"
+                      >Журнал Московский Фигурист</a
+                    >
+                  </li>
+                  <li class="navigation__list">
+                    <span>«Московский фигурист» №4 (64) 2021</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">
+              «Московский фигурист» №4 (64) 2021
+            </h1>
+
+            <div class="main-layout__row main-layout__row_reverse">
+              <!-- sidebar-cart -->
+
+              <sidebar class="main-layout__sidebar sidebar-cart">
+                <section class="sidebar-cart__inner">
+                  <ul class="sidebar-cart__items sidebar-cart__items_col">
+                    <li class="sidebar-cart__item sidebar-cart__item_big">
+                      <div class="sidebar-cart__images">
+                        <picture>
+                          <source
+                            srcset="img/image-sidebar-3.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/image-sidebar-3.jpg"
+                            class="image"
+                            alt="gallery"
+                          />
+                        </picture>
+                      </div>
+                    </li>
+
+                    <li class="sidebar-cart__btn">
+                      <a
+                        href="images/kitten.jpg"
+                        class="download-text"
+                        download=""
+                      >
+                        <img src="img/download-pdf.svg" alt="pdf" />
+                        <span>«Московский фигурист» №4 (64) 2021.pdf</span>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+              </sidebar>
+              <!--end sidebar-cart -->
+              <section class="main-layout__inner main-layout__content ">
+                <!-- content-text -->
+                <div class="main-layout__magazine magazine">
+                  <div class="magazine__content-text">
+                    <span>Новости ФФКМ</span>
+                    <p>О последних решения президиума и СТК.</p>
+                    <span>Знай наших!</span>
+                    <h2>Трудно быть богом</h2>
+                    <p>
+                      О юных танцорах Василисе Кагановской и Валерии Ангелополе,
+                      которые выиграли в этом году Первенство Москвы, а также
+                      отобрались в финал юниорского Гран-при ИСУ. А также
+                      интервью с их тренером Анжеликой Крыловой о перспективах
+                      этой пары и особенностях работы с ними.
+                    </p>
+
+                    <span>Разрешите представить</span>
+                    <h2>Личное дело</h2>
+                    <p>
+                      Интервью с учредителем спортивного клуба «Армия фигурного
+                      катания» Антоном Абдурахмановым, чей клуб на сегодняшний
+                      момент является самым конкурентоспособным частным клубом
+                      Москвы.
+                    </p>
+
+                    <span>Мастер-класс</span>
+                    <h2>Яркий лед</h2>
+                    <p>
+                      Автор статьи — Андрей Уваров, который опираясь на
+                      последние психологические исследования по арт-терапии,
+                      рассказывает о том, что изобразительное искусство как
+                      хобби может положительно повлиять на стрессоустойчивость
+                      фигуристов, а также помочь им раскрыть свой эмоциональный
+                      потенциал.
+                    </p>
+
+                    <span>Мнение</span>
+                    <h2>Время нехитрых желаний</h2>
+                    <p>
+                      <strong>
+                        Никита Михайлов: «Чем больше программ я ставлю, тем
+                        сильнее становлюсь»</strong
+                      >
+                      Автор статьи — Андрей Уваров, который опираясь на
+                      последние психологические исследования по арт-терапии,
+                      рассказывает о том, что изобразительное искусство как
+                      хобби может положительно повлиять на стрессоустойчивость
+                      фигуристов, а также помочь им раскрыть свой эмоциональный
+                      потенциал.
+                    </p>
+
+                    <span>Дискуссия</span>
+                    <h2>Бери и делай</h2>
+                    <p>
+                      Интервью с организатором благотворительного фестиваля балетов на льду Александрой Захаровой, которая придумала и провела это мероприятие в новом формате и с новыми смыслами, что для Москвы являет собой интересный опыт работы в этом виде фигурного катания.
+                    </p>
+                  </div>
+
+                  <button class="btn btn-white">Вернуться  назад</button>
+                </div>
+                <!--end content-text -->
+
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

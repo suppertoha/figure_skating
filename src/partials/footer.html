@@ -1,0 +1,183 @@
+<div class="follow-cursor"></div> <!-- элемент, который следует за курсором -->
+
+<div class="btn-up btn-up_hide"></div>
+
+<div class="button-mobile search-button">
+  <svg class="search-button__icon">
+    <use xlink:href="img/sprite.svg#search"></use>
+  </svg>
+</div>
+
+<div class="mobile__search search-mobile">
+  <div class="search-mobile__wrapper">
+    <input type="text" class="search-mobile__input" placeholder="Поиск по сайту">
+    <div class="search-mobile__box search-button">
+      <svg class="search-button__icon">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+    </div>
+  </div>
+</div>
+<footer class="footer mousemove-none">
+  <div class="footer__container">
+    <div class="footer__inner">
+      <div class="footer__nav nav">
+        <ul class="nav__list nav__list_flex">
+          <li class="nav__accordion accordion">
+            <button class="accordion__control accordion-start-js">
+              <span class="accordion__title">Федерация</span>
+              <span class="accordion__icon">
+                <svg class="arrow-triangle">
+                  <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                </svg>
+              </span>
+            </button>
+
+            <ul class="accordion__content accordion-content-js">
+              <li class="accordion__item"><a href="general-meeting.html">Общее собрание</a></li>
+              <li class="accordion__item"><a href="president.html">Президент</a></li>
+              <li class="accordion__item"><a href="presidium.html">Президиум</a></li>
+              <li class="accordion__item"><a href="commission.html"> Контрольно-ревизионная комиссия</a></li>
+              <li class="accordion__item"><a href="directorate.html">Дирекция ФФКМ</a></li>
+              <li class="accordion__item">
+                <a href="payment.html">Оплата членских взносов</a>
+              </li>
+              <li class="accordion__item">
+                <a href="muscovites.html">Москвичи - Заслуженные тренеры страны</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__accordion accordion">
+            <button class="accordion__control accordion-start-js">
+              <span class="accordion__title">Сезон 2022/23</span>
+              <span class="accordion__icon">
+                <svg class="arrow-triangle">
+                  <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                </svg>
+              </span>
+            </button>
+
+            <ul class="accordion__content accordion-content-js">
+              <li class="accordion__item"><a href="current-competitions.html">Соревнования</a></li>
+              <li class="accordion__item"><a href="testing.html">Тестирование</a></li>
+              <li class="accordion__item"><a href="seminars.html">Семинары</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__accordion accordion">
+            <button class="accordion__control accordion-start-js">
+              <span class="accordion__title">Документы</span>
+              <span class="accordion__icon">
+                <svg class="arrow-triangle">
+                  <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                </svg>
+              </span>
+            </button>
+
+            <ul class="accordion__content accordion-content-js">
+              <li class="accordion__item"><a href="athletes.html">Спортсменам</a></li>
+              <li class="accordion__item"><a href="#">Тренерам</a></li>
+              <li class="accordion__item"><a href="#">Судьям</a></li>
+              <li class="accordion__item"><a href="#">Организациям</a></li>
+              <li class="accordion__item"><a href="#">Членам ФФКМ</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__block">
+            <ul class="nav__items">
+              <li class="nav__accordion accordion">
+                <button class="accordion__control accordion-start-js">
+                  <span class="accordion__title">Найти школу</span>
+                  <span class="accordion__icon">
+                    <svg class="arrow-triangle">
+                      <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                    </svg>
+                  </span>
+                </button>
+
+                <ul class="accordion__content accordion-content-js">
+                  <li class="accordion__item">
+                    <a href="training.html"
+                      >Организации, осуществляющие спортивную подготовку</a
+                    >
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#">Организации массового спорта</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#">Индивидуальные предприниматели</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__accordion accordion accordion_padding-none">
+                <button class="accordion__control accordion-start-js">
+                  <span class="accordion__title">Контакты</span>
+                  <span class="accordion__icon">
+                    <svg class="arrow-triangle">
+                      <use xlink:href="img/sprite.svg#arrow-triangle"></use>
+                    </svg>
+                  </span>
+                </button>
+
+                <ul class="accordion__content accordion-content-js">
+                  <li class="accordion__item">
+                    <a href="contacts.html" class="accordion__location location location_footer">
+                      <svg class="location__icon location__icon_footer">
+                        <use xlink:href="img/sprite.svg#bullet"></use>
+                      </svg>
+
+                      <span class="location__description location__description_footer">
+                        Ленинградский проспект, 37 БЦ «Аэродром», офис 903
+                      </span>
+                    </a>
+
+                  </li>
+                  <li class="accordion__item">
+                    @include('_component/_connection.html')
+                  </li>
+                </ul>
+              </li>
+
+              <li class="accordion__group group-link">
+                <ul class="group-link__list">
+                  <li class="group-link__link">
+                    <a href="magazine-skater.html">Журнал Московский Фигурист</a>
+                  </li>
+
+                  <li class="group-link__link">
+                    <a href="museum.html">Музей Фигурного катания</a>
+                  </li>
+
+                  <li class="group-link__link">
+                    <a href="photo-gallery.html">Фотогалерея</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="footer__container">
+      <ul class="footer__politics">
+        <li class="footer__copy">
+          &copy; 2022 ФФКМ. Все права защищены
+        </li>
+
+        <li class="footer__politic">
+          <a href="#">Политика конфеденциальности</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</footer>

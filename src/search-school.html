@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout main-layout_content">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="main.html" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="navigation__list">
+                    <span>Найти школу</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">Найти школу</h1>
+
+            <section class="main-layout__body">
+              <div class="main-layout__school school-search">
+                <div class="school-search__inner">
+                  <div class="school-search__header">
+                    <ul class="school-search__items">
+                      <li
+                        class="school-search__button button-search button-search_first active"
+                      >
+                        <div class="button-search__inner">
+                          <div class="button-search__name">
+                            <svg class="button-search__icon">
+                              <use
+                                xlink:href="img/sprite.svg#sports-training"
+                              ></use>
+                            </svg>
+                            Организации, осуществляющие спортивную подготовку
+                          </div>
+
+                          <div class="button-search__buttons">
+                            <button
+                              class="button-search__btn btn btn-white js-map"
+                              data-triger-first
+                            >
+                              Показать на карте
+                            </button>
+
+                            <button
+                              class="button-search__btn btn btn-border_white js-list"
+                              data-list-first
+                            >
+                              Открыть список
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li
+                        class="school-search__button button-search button-search_second"
+                      >
+                        <div class="button-search__inner">
+                          <div class="button-search__name">
+                            <span>
+                              <svg class="button-search__icon">
+                                <use xlink:href="img/sprite.svg#cup"></use>
+                              </svg>
+                            </span>
+
+                            Организации массового спорта
+                          </div>
+
+                          <div class="button-search__buttons">
+                            <button
+                              class="button-search__btn btn btn-white js-map"
+                              data-triger-second
+                            >
+                              Показать на карте
+                            </button>
+
+                            <button
+                              class="button-search__btn btn btn-border_white js-list"
+                              data-list-second
+                            >
+                              Открыть список
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li
+                        class="school-search__button button-search button-search_third"
+                      >
+                        <div class="button-search__inner">
+                          <div class="button-search__name">
+                            <svg class="button-search__icon">
+                              <use
+                                xlink:href="img/sprite.svg#skate-white"
+                              ></use>
+                            </svg>
+                            Индивидуальные предприниматели
+                          </div>
+
+                          <div class="button-search__buttons">
+                            <button
+                              class="button-search__btn btn btn-white js-map"
+                              data-triger-third
+                            >
+                              Показать на карте
+                            </button>
+
+                            <button
+                              class="button-search__btn btn btn-border_white js-list"
+                              data-list-third
+                            >
+                              Открыть список
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="school-search__wrap">
+                    <div class="school-search__mobile mobile-search">
+                      <div class="mobile-search__arrow">
+                        <svg class="">
+                          <use xlink:href="img/sprite.svg#close-search"></use>
+                        </svg>
+                      </div>
+
+                      <div class="mobile-search__description">
+                        <div class="mobile-search__name" data-name="name-1">
+                          <svg class="mobile-search__icon">
+                            <use
+                              xlink:href="img/sprite.svg#sports-training"
+                            ></use>
+                          </svg>
+                          Организации, осуществляющие спортивную подготовку
+                        </div>
+
+                        <div class="mobile-search__name" data-name="name-2">
+                          <svg class="mobile-search__icon">
+                            <use xlink:href="img/sprite.svg#cup"></use>
+                          </svg>
+                          Организации массового спорта
+                        </div>
+
+                        <div class="mobile-search__name" data-name="name-3">
+                          <svg class="mobile-search__icon">
+                            <use xlink:href="img/sprite.svg#skate-white"></use>
+                          </svg>
+                          Индивидуальные предприниматели
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="school-search__body">
+                      <div class="school-search__container js-container">
+                        <ul class="school-search__list">
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Центр развития спорта “Столица”»
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 60, БЦ «Аэродром»,
+                                  офис 400
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  crs@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Кристалл»
+
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 37 БЦ&nbsp;«Аэродром»,
+                                  офис 903
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  office.ffkm@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Центр развития спорта “Столица”»
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 60, БЦ «Аэродром»,
+                                  офис 400
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  crs@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Кристалл»
+
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 37 БЦ&nbsp;«Аэродром»,
+                                  офис 903
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  office.ffkm@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Центр развития спорта “Столица”»
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 60, БЦ «Аэродром»,
+                                  офис 400
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  crs@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Кристалл»
+
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 37 БЦ&nbsp;«Аэродром»,
+                                  офис 903
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  office.ffkm@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Центр развития спорта “Столица”»
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 60, БЦ «Аэродром»,
+                                  офис 400
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  crs@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Кристалл»
+
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 37 БЦ&nbsp;«Аэродром»,
+                                  офис 903
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  office.ffkm@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Центр развития спорта “Столица”»
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 60, БЦ «Аэродром»,
+                                  офис 400
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  crs@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Кристалл»
+
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 37 БЦ&nbsp;«Аэродром»,
+                                  офис 903
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  office.ffkm@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Центр развития спорта “Столица”»
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 60, БЦ «Аэродром»,
+                                  офис 400
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  crs@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Кристалл»
+
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 37 БЦ&nbsp;«Аэродром»,
+                                  офис 903
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  office.ffkm@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Центр развития спорта “Столица”»
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 60, БЦ «Аэродром»,
+                                  офис 400
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  crs@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+
+                          <li
+                            class="sidebar-cart__menu sidebar-cart__menu_filter sidebar-cart__filter"
+                          >
+                            <div class="sidebar-cart__dropdown-filter dropdown">
+                              <button class="dropdown__button">
+                                <span class=""
+                                  >АНО «Кристалл»
+
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul class="dropdown__list">
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#bullet"
+                                    ></use>
+                                  </svg>
+
+                                  Ленинградский проспект, 37 БЦ&nbsp;«Аэродром»,
+                                  офис 903
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use
+                                      xlink:href="img/sprite.svg#phone"
+                                    ></use>
+                                  </svg>
+
+                                  <strong>+7&nbsp;495&nbsp;280-38-78</strong>
+                                </li>
+
+                                <li>
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                  </svg>
+                                  office.ffkm@gmail.com
+                                </li>
+                              </ul>
+                              <input
+                                type="text"
+                                name="Day"
+                                class="dropdown__input-hidden"
+                              />
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="school-search__map" id="map"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<cd659648-e743-4580-9fbe-f3c5d5602eeb>"
+      type="text/javascript"
+    ></script>
+
+    <script>
+      ymaps.ready(function () {
+        var myMap = new ymaps.Map(
+            "map",
+            {
+              //center: [55.751574, 37.573856],
+              center: [55.79219515952424, 37.540685833313006],
+              zoom: 16,
+            },
+            {
+              searchControlProvider: "yandex#search",
+            }
+          ),
+          // Создаём макет содержимого.
+          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          ),
+          myPlacemark = new ymaps.Placemark(
+            myMap.getCenter(),
+            {
+              hintContent: "офис ФФКМ",
+              balloonContent: "офис ФФКМ",
+            },
+            {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: "default#image",
+              // Своё изображение иконки метки.
+              iconImageHref: "img/map.svg",
+              // Размеры метки.
+              iconImageSize: [49, 72],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-30, -60],
+            }
+          ),
+          myPlacemarkWithContent = new ymaps.Placemark(
+            [55.661574, 37.573856],
+            {
+              hintContent: "Собственный значок метки с контентом",
+              balloonContent: "А эта — новогодняя",
+              iconContent: "12",
+            },
+            {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: "default#imageWithContent",
+              // Своё изображение иконки метки.
+              iconImageHref: "images/ball.png",
+              // Размеры метки.
+              iconImageSize: [48, 48],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-24, -24],
+              // Смещение слоя с содержимым относительно слоя с картинкой.
+              iconContentOffset: [15, 15],
+              // Макет содержимого.
+              iconContentLayout: MyIconContentLayout,
+            }
+          );
+
+        myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
+      });
+    </script>
+  </body>
+</html>

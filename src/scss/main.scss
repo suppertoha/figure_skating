@@ -1,0 +1,55 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/connection";
+@import "./components/location";
+@import "./components/social";
+@import "./components/block";
+@import "./components/hover";
+@import "./components/burger";
+@import "./components/accordion";
+@import "./components/footer";
+@import "./components/main-menu";
+@import "./components/slider";
+@import "./components/main-page";
+@import "./components/main-layout";
+@import "./components/slider-inside";
+@import "./components/cards-main";
+@import "./components/button";
+@import "./components/sidebar-cart";
+@import "./components/navigation";
+@import "./components/content-text";
+@import "./components/menu-sidebar";
+@import "./components/about";
+@import "./components/cart-about";
+@import "./components/modal";
+@import "./components/commission";
+@import "./components/payment";
+@import "./components/important-page";
+@import "./components/veterans";
+@import "./components/mouse-effect";
+@import "./components/btn-up";
+@import "./components/сards-judges";
+@import "./components/carts-magistrate";
+@import "./components/dropdown";
+@import "./components/pagination";
+@import "./components/contacts";
+@import "./components/table";
+@import "./components/referee-card";
+@import "./components/text-content";
+@import "./components/documention";
+@import "./components/cards-content";
+@import "./components/calendar";
+@import "./components/traning";
+@import "./components/gallery";
+@import "./components/error";
+@import "./components/searching-results";
+@import "./components/magazine";
+@import "./components/search-school";
+
+

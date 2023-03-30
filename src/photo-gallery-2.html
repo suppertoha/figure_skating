@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="#" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="navigation__list">
+                    <a href="photo-gallery.html" class="navigation__link">Фотогалерея</a>
+                  </li>
+                  <li class="navigation__list">
+                    <span>Сезон 2021-2022</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">Сезон 2021-2022</h1>
+
+            <div class="main-layout__row">
+              <section class="main-layout__inner main-layout__inner_one">
+                <div class="main-layout__gallery gallery">
+                  <div class="cards-main">
+                    <div class="cards-main__items cards-main__items_season">
+
+                      <div class="cards-main__item">
+                        <div class="cards-main__body">
+                          <h2 class="cards-main__description">
+                            Чемпионат города Москвы по фигурному катанию на коньках
+                          </h2>
+                          <span class="cards-main__date">
+                            <svg class="cards-main__icon">
+                              <use xlink:href="img/sprite.svg#calendon"></use>
+                            </svg>
+
+                            <span>14.11.2022</span>
+                          </span>
+
+                        </div>
+
+                        <div class="cards-main__image">
+                          <picture>
+                            <source srcset="img/season-7.webp" type="image/webp">
+                            <img loading="lazy" src="img/season-7.jpg" class="image" width="" height="" alt="">
+                          </picture>
+                        </div>
+                      </div>
+
+                      <div class="cards-main__item">
+                        <div class="cards-main__body">
+                          <h2 class="cards-main__description">
+                            Чемпионат города Москвы по фигурному катанию на коньках
+                          </h2>
+                          <span class="cards-main__date">
+                            <svg class="cards-main__icon">
+                              <use xlink:href="img/sprite.svg#calendon"></use>
+                            </svg>
+
+                            <span>14.11.2022</span>
+                          </span>
+
+                        </div>
+
+                        <div class="cards-main__image">
+                          <picture>
+                            <source srcset="img/season-8.webp" type="image/webp">
+                            <img loading="lazy" src="img/season-8.jpg" class="image" width="" height="" alt="">
+                          </picture>
+                        </div>
+                      </div>
+
+
+                      <div class="cards-main__item">
+                        <div class="cards-main__body">
+                          <h2 class="cards-main__description">
+                            Чемпионат города Москвы по фигурному катанию на коньках
+                          </h2>
+                          <span class="cards-main__date">
+                            <svg class="cards-main__icon">
+                              <use xlink:href="img/sprite.svg#calendon"></use>
+                            </svg>
+
+                            <span>14.11.2022</span>
+                          </span>
+
+                        </div>
+
+                        <div class="cards-main__image">
+                          <picture>
+                            <source srcset="img/season-9.webp" type="image/webp">
+                            <img loading="lazy" src="img/season-9.jpg" class="image" width="" height="" alt="">
+                          </picture>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

@@ -1,0 +1,594 @@
+.school-search {
+  margin-top: 15px;
+
+  @include min1024 {
+    margin-top: 0;
+  }
+  &__wrap {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    padding: 132px 15px 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+
+    &.black-active {
+      opacity: 1;
+      visibility: visible;
+      background: #14202A;
+    }
+
+    &.white-active {
+      opacity: 1;
+      visibility: visible;
+      background:  #ffffff;
+    }
+    //.dropdown__button {
+    //  .arrow-triangle {
+    //    position: static;
+    //  }
+    //}
+
+    @include min1024 {
+      opacity: 1;
+      visibility: visible;
+      position: static;
+      z-index: 2;
+      background: transparent;
+      padding: 0;
+    }
+  }
+
+  &__body {
+    height: 100%;
+    @include min1024 {
+      height: auto;
+    }
+  }
+
+  &__items {
+    @include min1024 {
+      display: grid;
+      grid-gap: 22px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__button {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    @include min1024 {
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__container {
+    background: #ffffff;
+    position: absolute;
+    top: 134px;
+    right: 15px;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+
+    &.active{
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @include min1024 {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .dropdown__button {
+      .arrow-triangle {
+        position: static;
+      }
+    }
+
+    .visible {
+      background: rgba(63, 168, 227, 0.1);
+      margin-bottom: 10px;
+      margin-top: 10px;
+
+      @include min1024 {
+        margin-bottom: 20px;
+      }
+    }
+
+    .dropdown__button {
+      font-size: 14px;
+      span {
+        padding: 0px;
+      }
+
+      @include min1024 {
+        font-size: 16px;
+        span {
+          padding: 15px 30px 15px 15px;
+        }
+      }
+
+      @include min1366 {
+        font-size: 18px;
+      }
+    }
+
+    @include min1024 {
+      padding: 15px;
+
+      grid-column: 4 span;
+      border-radius: 10px;
+      z-index: 1;
+      position: inherit;
+    }
+  }
+
+  &__body {
+    @include min1024 {
+      margin-top: 40px;
+      height: 480px;
+
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__list {
+    background: #ffffff;
+    border-radius: 10px;
+    max-height: 480px;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    &::-webkit-scrollbar {
+      background: #d0d0d0;
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #3fa8e3;
+      border-radius: 8px;
+      width: 3px;
+    }
+
+    .dropdown__button {
+      .arrow-triangle {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span {
+        &.active {
+          .arrow-triangle {
+            transform: rotateX(0deg);
+            fill: #3fa8e3;
+          }
+        }
+      }
+    }
+
+    @include min1024 {
+      .sidebar-cart__menu_filter {
+        padding: 10px 0px;
+      }
+
+      .dropdown__button {
+        padding-right: 10px;
+      }
+    }
+
+    @include min1600 {
+      padding-right: 0px;
+    }
+
+    .sidebar-cart__menu_filter {
+      margin-bottom: 0;
+
+      padding: 10px 15px;
+      @include min1024 {
+        padding: 0;
+      }
+    }
+
+    .sidebar-cart__dropdown-filter{
+      ul{
+        li, strong {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 130%;
+          color: #1f2123;
+
+          @include min1024 {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .icon{
+        ~.arrow-triangle{
+          display: none;
+        }
+      }
+    }
+
+    ul {
+      li {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: #1f2123;
+
+        @include min1024 {
+          font-size: 16px;
+        }
+        &:first-child {
+          svg {
+            align-self: flex-start;
+          }
+        }
+        strong {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+        }
+        svg {
+          width: 14px;
+          height: 15px;
+          fill: #1f2123;
+          display: flex;
+          align-items: flex-start;
+          align-self: center;
+          margin-right: 10px;
+          flex-shrink: 0;
+        }
+        display: flex;
+
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
+
+        @include min1366 {
+          font-size: 16px;
+
+          strong {
+            font-size: 22px;
+          }
+        }
+
+        @include min1600 {
+          font-size: 18px;
+
+          strong {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+
+  &__map {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @include min1024 {
+      grid-column: 8 span;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.button-search {
+  transition: border 0.3s;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+
+  &_first {
+    .button-search__icon {
+      transition: 0.3s;
+      overflow: hidden;
+      transform: translate(0, -5px);
+      use {
+        transition: 0.3s;
+        transform: translate(0, 10px);
+      }
+    }
+
+    @include min1024 {
+      &:hover {
+        .button-search__icon {
+          overflow: hidden;
+          transform: translate(0, -5px);
+          use {
+            transform: translate(0, 5px);
+          }
+        }
+      }
+    }
+  }
+
+  &_second {
+    .button-search__icon {
+      transition: 0.5s;
+      overflow: hidden;
+      transform: translate(0, 0px);
+      transform: translate(0, 5px);
+    }
+
+    span {
+      position: relative;
+      margin-top: -5px;
+
+      &:before {
+        content: "";
+        z-index: 2;
+        display: inline-block;
+        position: absolute;
+        width: 34px;
+        height: 5px;
+        left: 5px;
+        bottom: 3px;
+        background: #ffffff;
+      }
+    }
+
+    @include min1024 {
+      &:hover {
+        .button-search__icon {
+          transform: translate(0, 2px);
+        }
+      }
+    }
+  }
+
+  &_third {
+    .button-search__icon {
+      transition: 0.5s;
+    }
+
+    @include min1024 {
+      &:hover {
+        .button-search__icon {
+          overflow: hidden;
+          transform: translate(10px, 0px) rotate(20deg);
+        }
+      }
+    }
+  }
+
+  @include min1024 {
+    &.active {
+      background: rgba(63, 168, 227, 0.2);
+      border: 2px solid #3fa8e3;
+    }
+  }
+
+
+  @include min1024 {
+    padding: 12px 15px;
+
+    &:hover {
+      border: 2px solid #3fa8e3;
+    }
+  }
+
+  &__inner {
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+    @include min1024 {
+      margin-bottom: 0;
+    }
+
+    @include min1366 {
+      font-size: 18px;
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    fill: #ffffff;
+    margin-right: 15px;
+  }
+
+  &__buttons {
+    @include min1024 {
+      display: none;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.list-organization {
+  &__body {
+    li {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      &:first-child {
+        svg {
+          align-self: flex-start;
+        }
+      }
+      strong {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: #ffffff;
+        display: flex;
+        align-items: flex-start;
+        align-self: center;
+        margin-right: 20px;
+        flex-shrink: 0;
+      }
+      display: flex;
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+
+      @include min1366 {
+        font-size: 16px;
+
+        strong {
+          font-size: 22px;
+        }
+      }
+
+      @include min1600 {
+        font-size: 18px;
+
+        strong {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+.mobile-search {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  @include min1024 {
+    display: none;
+  }
+  &__arrow {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    svg {
+      fill: #8a96a1;
+      width: 30px;
+      height: 23.5px;
+    }
+  }
+  &__description {
+    padding: 60px 15px 30px;
+
+    &.active-black{
+      .mobile-search__name{
+        color: #ffffff;
+        &:first-child{
+          display: flex;
+        }
+      }
+
+      .mobile-search__icon{
+        fill: #ffffff;
+      }
+    }
+
+    &.active-white{
+      .mobile-search__name{
+        &:first-child{
+          display: flex;
+        }
+      }
+    }
+  }
+  &__name {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: #1f2123;
+    display: flex;
+    align-items: center;
+    display: none;
+
+    @include min1024 {
+      display: flex;
+    }
+  }
+  &__icon {
+    width: 44px;
+    height: 44px;
+    fill: #1f2123;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+}
+
+.sidebar-cart__dropdown-filter{
+
+  .icon{
+    position: relative;
+    &:after{
+      content: '' ;
+      display: inline-block;
+      width: 6px;
+      height: 5px;
+      position: absolute;
+      right: -12px;
+      background-size: contain;
+      top: calc(50% - 3px);
+      background-image: url(../img/icon-arrow.svg);
+    }
+    ~.arrow-triangle{
+      display: none;
+    }
+  }
+}
