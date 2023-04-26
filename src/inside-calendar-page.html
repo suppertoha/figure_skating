@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="main__slider container">
+          @include('partials/_component/_slider.html')
+        </section>
+
+        <section class="main__menu">
+          @include('partials/main-menu.html')
+        </section>
+
+        <section class="main__layout main-layout main-layout_content">
+          <div class="main-layout__container container">
+            <!-- navigation -->
+            <section class="navigation">
+              <div class="navigation__container">
+                <ul class="navigation__items">
+                  <li class="navigation__list">
+                    <a href="main.html" class="navigation__link">
+                      <svg class="navigation__icon">
+                        <use xlink:href="img/sprite.svg#home"></use>
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="navigation__list">
+                    <a href="season.html" class="navigation__link"> Сезон 2022/23</a>
+                  </li>
+
+                  <li class="navigation__list">
+                    <a href="calendar-of-synchronized.html" class="navigation__link">Календарь соревнований по синхронному катанию</a>
+                  </li>
+                  <li class="navigation__list">
+                    <span>Первенство города по фигурному катанию на коньках</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--end navigation -->
+
+            <h1 class="main-layout__title title-h1">Первенство города по фигурному катанию на коньках</h1>
+
+            <div class="main-layout__row">
+              <section class="main-layout__inner main-layout__inner_content  ">
+                <!-- content-text -->
+                <div class="main-layout__commission commission" data-sticke-element>
+                  <div class="commission__inner inside-calendar-page">
+
+                    <ul>
+                      <li><strong>Сроки проведения:</strong> 05 - 07 апреля 2022 года</li>
+                      <li><strong>Место проведения:</strong> г. Челябинск, ДС “Юность”</li>
+                      <li><strong>Адрес места проведения:</strong> г. Челябинск, Свердловский проспект, 51</li>
+                      <li><strong>Разряды:</strong> 1 спортивный разряд, КМС, МС</li>
+                      <li><strong>Виды:</strong> Одиночное и парное катание</li>
+                      <li><strong>Официальная ссылка на турнир:</strong> <a href="#">Ссылка</a></li>
+
+                    </ul>
+                    <p>
+                      Рыбный текст – это текст, выполняющий исключительно утилитарную функцию.
+                      Он не вписывается в контекст сайта, на котором используется, и нужен
+                      только для заполнения пространства. Зачастую такой текст даже не имеет
+                      четкого смысла и представляет собой набор слов и фраз, которые вроде бы
+                      формируют грамматически верные конструкции, но какой-либо мысли в них не
+                      прослеживается.
+                    </p>
+
+                    <p>
+                      Рыбу используют вебмастера, веб-дизайнеры и разработчики, у которых нет
+                      под рукой готового текста, но нужно как-то оценить внешний вид контента на
+                      готовой странице. Оценить, насколько хорошо он вписывается в дизайн и не
+                      «плывет» ли верстка.
+                    </p>
+
+                    <h2><span>Курочкин Владимир Сергеевич —</span> председатель комиссии</h2>
+                    <h2><span>Иорданян Марина Альбертовна —</span> член комиссии</h2>
+                    <h2><span>Яблоцкий Константин Витальевич —</span> член комиссии</h2>
+
+                    <ul class="commission__list">
+                      <li class="commission__item">
+                        <a href="images/kitten.jpg" class="commission__link" download>
+                          <img src="img/download-pdf.svg" alt="pdf">
+                          Положение о контрольно-ревизионной комиссии.pdf
+                        </a>
+                      </li>
+
+                      <li class="commission__item">
+                        <a href="images/kitten.jpg" class="commission__link" download>
+                          <img src="img/download-doc.svg" alt="doc">
+                          Название прикрепленного текстового документа.doc
+                        </a>
+                      </li>
+
+                      <li class="commission__item">
+                        <a href="images/kitten.jpg" class="commission__link" download>
+                          <img src="img/download-xls.svg" alt="xls">
+                          Таблицы.xls
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!--end content-text -->
+              </section>
+              <!-- sidebar-cart -->
+
+              <sidebar class="main-layout__sidebar sidebar-cart">
+                <section class="sidebar-cart__inner">
+                  <ul class="sidebar-cart__items">
+                    <li class="sidebar-cart__menu menu-sidebar">
+                      <ul class="menu-sidebar_body">
+                        <li class="menu-sidebar__item">
+                          <a href="#">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Общее собрание</a
+                          >
+                        </li>
+                        <li class="menu-sidebar__item">
+                          <a href="#">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Президент</a
+                          >
+                        </li>
+                        <li class="menu-sidebar__item">
+                          <a href="#">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Президиум</a
+                          >
+                        </li>
+
+                        <li>
+                          <ul class="menu-sidebar__next">
+                            <li class="menu-sidebar__wrap">
+                              <button
+                                class="menu-sidebar__btn accordion-start-js"
+                              >
+                                <svg class="menu-sidebar__skate">
+                                  <use xlink:href="img/sprite.svg#skate"></use>
+                                </svg>
+                                <span class="menu-sidebar__title"
+                                  >Комиссия президиума</span
+                                >
+                                <span class="menu-sidebar__icon">
+                                  <svg class="arrow-triangle">
+                                    <use
+                                      xlink:href="img/sprite.svg#arrow-triangle"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <ul
+                                class="menu-sidebar__inside accordion-content-js"
+                              >
+                                <li>
+                                  <a href="#"> Технический совет</a>
+                                </li>
+
+                                <li>
+                                  <a href="#"> Коллегия судей</a>
+                                </li>
+
+                                <li>
+                                  <a href="#"> Дисциплинарная комиссия</a>
+                                </li>
+
+                                <li>
+                                  <a href="#"> Комиссия по тестированию</a>
+                                </li>
+
+                                <li>
+                                  <div class="menu-sidebar__contain">
+                                    <button class="menu-sidebar__el">
+                                      <span>Работа с ветеранами</span>
+                                      <span class="menu-sidebar__icon">
+                                        <svg class="arrow-triangle">
+                                          <use
+                                            xlink:href="img/sprite.svg#arrow-triangle"
+                                          ></use>
+                                        </svg>
+                                      </span>
+                                    </button>
+
+                                    <ul class="menu-sidebar__dropdown">
+                                      <li><a href="#">Ветераны</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="menu-sidebar__item active">
+                          <a href="#">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Контрольно-ревизионная комиссия</a
+                          >
+                        </li>
+
+                        <li class="menu-sidebar__wrap">
+                          <button
+                            class="menu-sidebar__btn accordion-start-js"
+                          >
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            <span class="menu-sidebar__title"
+                              >Дирекция ФФКМ</span
+                            >
+                            <span class="menu-sidebar__icon">
+                              <svg class="arrow-triangle">
+                                <use
+                                  xlink:href="img/sprite.svg#arrow-triangle"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+
+                          <ul
+                            class="menu-sidebar__inside accordion-content-js"
+                          >
+                            <li>
+                              <a href="#">Спортивно-техническая комиссия</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="menu-sidebar__item">
+                          <a href="#">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Члены ФФКМ</a
+                          >
+                        </li>
+
+                        <li class="menu-sidebar__item">
+                          <a href="#">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Почетные члены ФФКМ</a
+                          >
+                        </li>
+
+                        <li class="menu-sidebar__item">
+                          <a href="#">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Оплата членских взносов</a
+                          >
+                        </li>
+
+                        <li class="menu-sidebar__item">
+                          <a href="#">
+                            <svg class="menu-sidebar__skate">
+                              <use xlink:href="img/sprite.svg#skate"></use>
+                            </svg>
+                            Москвичи — Заслуженные тренеры страны
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="sidebar-cart__item sidebar-cart__item_big">
+                      <div class="sidebar-cart__body">
+                        <div class="sidebar-cart__img">
+                          <picture>
+                            <source
+                              srcset="img/image-sidebar-1.webp"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/image-sidebar-1.jpg"
+                              class="image"
+                              alt=""
+                            />
+                          </picture>
+                        </div>
+
+                        <div class="sidebar-cart__content">
+                          <button class="sidebar-cart__button btn btn-icon">
+                            <span class="btn-icon__date">
+                              <svg class="btn-icon__icon">
+                                <use xlink:href="img/sprite.svg#calendon"></use>
+                              </svg>
+
+                              <span>26.04.2022</span>
+                            </span>
+                          </button>
+                          <span class="sidebar-cart__name"
+                            >День рождения Камилы Валиевой</span
+                          >
+                          <div class="sidebar-cart__description">
+                            Олимпийская чемпионка в командном соревновании,
+                            чемпионка Европы
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="sidebar-cart__item sidebar-cart__item_big">
+                      <div class="sidebar-cart__images">
+                        <picture>
+                          <source
+                            srcset="img/image-sidebar-2.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/image-sidebar-2.jpg"
+                            class="image"
+                            alt="gallery"
+                          />
+                        </picture>
+                      </div>
+                    </li>
+
+                    <li class="sidebar-cart__item cart-btn">
+                      <div class="cart-btn__contain">
+                        <div class="cart-btn__image">
+                          <picture>
+                            <source
+                              srcset="img/image-sidebar-3.jpg"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/image-sidebar-3.jpg."
+                              class="image"
+                              alt="gallery"
+                            />
+                          </picture>
+                        </div>
+
+                        <span class="cart-btn__description">Музей фигурного катания</span>
+                        <a href="#" class="cart-btn__link btn-link">Перейти</a>
+                      </div>
+                    </li>
+
+
+                    <li class="sidebar-cart__item cart-btn">
+                      <div class="cart-btn__contain">
+                        <div class="cart-btn__image">
+                          <picture>
+                            <source
+                              srcset="img/image-sidebar-4.jpg"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/image-sidebar-4.jpg."
+                              class="image"
+                              alt="gallery"
+                            />
+                          </picture>
+                        </div>
+
+                        <span class="cart-btn__description">Фотогалерея</span>
+                        <a href="#" class="cart-btn__link btn-link">Перейти</a>
+                      </div>
+                    </li>
+
+                  </ul>
+                </section>
+              </sidebar>
+              <!--end sidebar-cart -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>
